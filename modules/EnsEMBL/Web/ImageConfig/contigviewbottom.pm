@@ -60,6 +60,10 @@ sub modify {
   
   $self->load_configured_bam;
   $self->load_configured_bed;
+  $self->load_configured_bedgraph;
+  $self->load_configured_mw;
+  
+  $self->add_track('information', 'gradient_legend', 'Gradient Legend', 'gradient_legend', { strand => 'r' });
 } 
 
 1;

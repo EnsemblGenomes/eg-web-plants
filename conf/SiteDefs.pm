@@ -52,9 +52,9 @@ sub update_conf {
     $SiteDefs::SITE_FTP         = 'ftp://ftp.ensemblgenomes.org/pub/plants';
 
     @SiteDefs::ENSEMBL_PERL_DIRS =
-      ( $SiteDefs::ENSEMBL_SERVERROOT.'/perl',
-        $SiteDefs::ENSEMBL_SERVERROOT.'/eg-plugins/common/perl',
-        $SiteDefs::ENSEMBL_SERVERROOT.'/eg-plugins/plants/perl',
+      ( $SiteDefs::ENSEMBL_WEBROOT.'/perl',
+        $SiteDefs::ENSEMBL_SERVERROOT.'/eg-web-common/perl',
+        $SiteDefs::ENSEMBL_SERVERROOT.'/eg-web-plants/perl',
       );
 
     $SiteDefs::ENSEMBL_DATASETS = [
@@ -96,7 +96,7 @@ sub update_conf {
 
     push @SiteDefs::ENSEMBL_HTDOCS_DIRS, $SiteDefs::ENSEMBL_SERVERROOT. '/../biomarts/plants/biomart-perl/htdocs';
       
-    $SiteDefs::DOCSEARCH_INDEX_DIR = $SiteDefs::ENSEMBL_SERVERROOT.'/eg-plugins/plants/data/docsearch';
+    $SiteDefs::DOCSEARCH_INDEX_DIR = $SiteDefs::ENSEMBL_SERVERROOT.'/eg-web-plants/data/docsearch';
 
     $SiteDefs::ENA_COLLECTION_ID = 224;
 

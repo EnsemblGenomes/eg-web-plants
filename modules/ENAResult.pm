@@ -121,21 +121,19 @@ sub render {
     if ($num) {
 	$msg = $self->{_message};
 	$header = qq{<tr><th colspan="10"><h1 class="enaheader"> $msg </h1></td></tr>
-<tr><td class="ehleft" style="font-style:normal"><a href="#" onclick="sortResults('species');">Species</a></td>
-<td class="ehleft"><a href="#" onclick="sortResults('location');">Location<a/></td><td class="eh"><a href="#" onclick="sortResults('qlen');">Query Length</a></td><td class="eh"><a href="#" onclick="sortResults('tlen');">Target Length</a></td><td class="eh"> <a href="#" onclick="sortResults('identity');">Identity</a></td><td class="eh"><a href="#" onclick="sortResults('evalue');">E-Value</a></td>
+<tr><td class="ehleft" style="font-style:normal"><a class="ena-sort" id="sort-species">Species</a></td>
+<td class="ehleft"><a class="ena-sort" id="sort-location">Location<a/></td>
+<td class="eh"><a class="ena-sort" id="sort-qlen">Query Length</a></td>
+<td class="eh"><a class="ena-sort" id="sort-tlen">Target Length</a></td>
+<td class="eh"><a class="ena-sort" id="sort-identity">Identity</a></td>
+<td class="eh"><a class="ena-sort" id="sort-evalue">E-Value</a></td>
 <td class="eh" style="text-align:left;">Genes</td>
 </tr>};
 
 	my $esite = $self->{_species_defs}->SPECIES_DISPLAY_NAME;
 	my $sd = $self->{_species_defs};
 	my $registry = 'Bio::EnsEMBL::Registry';
-	$registry->load_registry_from_db(
-	    -host => $sd->DATABASE_HOST,
-	    -port => $sd->DATABASE_HOST_PORT,
-	    -user =>  $sd->DATABASE_DBUSER,
-	    -pass => $sd->DATABASE_DBPASS
-	    );
-
+	my $registry_loaded = 0;
 
         my $i = 0;
         foreach my $a (@{$self->{_alignments} || []}) {
@@ -162,6 +160,17 @@ sub render {
 	        $dba = $self->{_dbc}->get_DBAdaptor('core', $qset);
 	        $sa = $dba->get_SliceAdaptor;
               } else {
+		  # for EG wide search we need to load the registry to get adaptors for species which are not configured in the current site
+		  unless ($registry_loaded) {
+		      $registry->load_registry_from_db(
+			  -host => $sd->DATABASE_HOST,
+			  -port => $sd->DATABASE_HOST_PORT,
+			  -user =>  $sd->DATABASE_DBUSER,
+			  -pass => $sd->DATABASE_DBPASS
+			  );
+		      $registry_loaded = 1;
+		  }
+
                 $sa = $registry->get_adaptor( $species, 'Core', 'Slice' );
                 $site_url =  "http://${site}.ensembl.org";
                 $species = $esite->{$qset};
@@ -282,7 +291,7 @@ if ($wheat) {
 
 $html .= qq{
 <td>$qlen</td><td>$tlen</td>
-<td><a href="javascript:showAlignment(\'hit_$id\')">$identity \%</a></td>
+<td><a class="ena-alignment" id="link_$id">$identity \%</a></td>
 <td style="white-space:nowrap">$evalue</td>
 <td style="text-align:center">$ftext</td>
 };
@@ -307,10 +316,12 @@ $html .= qq{
 if ($wheat) {
 	$header = qq{<tr><th colspan="10"><h1 class="enaheader"> $msg </h1></td></tr>
 <tr>
-<td class="ehleft" style="font-style:normal"><a href="#" onclick="sortResults('location');">Wheat Sequence</a><br/>(View in ENA)</td><td class="eh" style="width:1px">&nbsp;</td>
-<td class="eh"><a href="#" onclick="sortResults('qlen');">Query Length</a></td>
-<td class="eh"><a href="#" onclick="sortResults('tlen');">Target Length</a></td>
-<td class="eh"> <a href="#" onclick="sortResults('identity');">Identity</a></td><td class="eh"><a href="#" onclick="sortResults('evalue');">E-Value</a></td>
+<td class="ehleft" style="font-style:normal"><a class="ena-sort" id="sort-location">Wheat Sequence</a><br/>(View in ENA)</td>
+<td class="eh" style="width:1px">&nbsp;</td>
+<td class="eh"><a class="ena-sort" id="sort-qlen">Query Length</a></td>
+<td class="eh"><a class="ena-sort" id="sort-tlen">Target Length</a></td>
+<td class="eh"><a class="ena-sort" id="sort-identity">Identity</a></td>
+<td class="eh"><a class="ena-sort" id="sort-evalue">E-Value</a></td>
 <td class="eh" style="text-align:left;"></td>
 <td class="eh" style="text-align:center">Mapped Location<br/>(in Brachypodium)</td><td class="eh" style="text-align:center">Mapped Location<br/>(in Barley)</td>
 
@@ -341,7 +352,6 @@ sub pager {
 
     return $pager;
 }
-
 sub render_pagination {
   my ($self,$jobid) = @_;
 
@@ -353,25 +363,22 @@ sub render_pagination {
   my $previous_page = $pager->previous_page;
   my $next_page = $pager->next_page;
   
-  my $tmpl =
-  my $query_string = sprintf ("jobstatus=ready;jobid=%s;order=%s" ,$jobid, $self->order );
-
   my $out = '<h4><div class="paginate">';
   if ( $pager->previous_page) {
-    $out .= sprintf( '<a class="prev" onclick="setPage(%d,\'%s\')">< Prev</a> ', $pager->previous_page, $self->order );
+    $out .= sprintf( '<a class="prev ena-pager" id="page-%d">< Prev</a> ', $pager->previous_page);
   }
   foreach my $i (1..$last_page) {
     if( $i == $current_page ) {
       $out .= sprintf( '<span class="current">%s</span> ', $i );
     } elsif( $i < 5 || ($last_page-$i)<4 || abs($i-$current_page+1)<4 ) {
-      $out .= sprintf( '<a onclick="setPage(%d,\'%s\')">%s</a> ', $i, $self->order, $i );
+      $out .= sprintf( '<a class="ena-pager" id="page-%d">%s</a> ', $i, $i );
     } else {
       $out .= '..';
     }
   }
   $out =~ s/\.\.+/ ... /g;
   if ($pager->next_page) {
-    $out .= sprintf( '<a class="next" onclick="setPage(%d,\'%s\')">Next ></a> ', $pager->next_page, $self->order );
+    $out .= sprintf( '<a class="next ena-pager" id="page-%d">Next ></a> ', $pager->next_page );
   }
   
   return "$out</div></h4>";

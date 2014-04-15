@@ -30,60 +30,6 @@ sub _init {
 }
 sub content {
   my $self              = shift;
-  return $self->wheatHomePage;
-}
-sub wheatHomePage {
-  my $self              = shift;
-  my $hub               = $self->hub;
-
-  my $evalue = $hub->param('evalue') || 1;
-  my $qtype = $hub->param('splicing');
-  my $domain = 23;
-  my $jobid = $hub->param('jobid');
-  my $jobstatus = $hub->param('jobstatus');
-  my $masking = $hub->param('masking');
-  my $species_defs      = $hub->species_defs;
-  my $html = '';
-
-  if ($jobstatus eq 'ready') {
-    my $seq = $hub->param('_query_sequence');
-    $html .= $self->pageHTML($seq, 'loadResults', $jobid, $evalue, $qtype, $masking, $domain);
-    return $html;
-  }
-
-
-  if (my $seq = $hub->param('_query_sequence')) {	
-      $seq =~ s/^\>.*\n//;
-      my $search = new ENASearch({_species_defs => $species_defs});
-      $search->collection = $domain;
-      $search->masking = 'Soft_Masking'  if ($masking && $masking eq 'on');
-      $search->splicing = 1	  if ($qtype && $qtype eq 'on');
-
-      my $jobid = $search->submit($seq);
-
-      $html .= $self->pageHTML($seq, 'setUpdate', $jobid, $evalue, $qtype, $masking, $domain);
-
-      $html .= qq{
-<script>\$(document).ready(
-function(){
-  setUpdate('$jobid','$evalue','$qtype','$masking','$domain');
-}
-);
-</script>
-};
-
-      my $pid = fork();
-      if (not defined $pid) {
-	  print "resources not avilable.\n";
-      } elsif ($pid == 0) {
-	  getResults($search, $evalue);
-	  exit(0);
-      } else {
-	  #    waitpid($pid,0);
-      }  
-    return $html;
-  }
-
 
   my $seq = ">Example Sequence\n".
 'CTTGTGGGTGTCCAGCATGAGGAACGCGAAGAGCGCACAGAACAGGCTCACGCACAGCTT
@@ -106,11 +52,10 @@ CTTTGCCCAACTTCAGATCATATGAACAACAATCTGTACTGCAGTCATTTCGGACAACTT
 GACCAGAGCTGAAGAGGTGGAGTGTAGCAGAAAACCAGAACATaTAAAaGATAGCGaGGA
 TAAAATACGGCACAACTGGGAAAACTATCAGTGCCTGAACTTCACCAATGACCTTCGCAG
 CAACCTG';
-  $html .= $self->pageHTML($seq);
 
-  return $html;
-
+  return $self->pageHTML($seq);
 }
+
 sub pageHTML {
     my $self = shift;
     my ($seq, $fn, $jobid, @params) = @_;
@@ -120,30 +65,20 @@ sub pageHTML {
     my $evalue = $hub->param('evalue') || 1;
     my $qtype = $hub->param('splicing');
 
-    my $section = $hub->param('page');
-    my $column = $hub->param('order');
-
-    my $page_size = 10;
-    my $species           = $hub->species;
-
 #   my $file = "/ssi/species/about_${species}.html";
 #   my $html = EnsEMBL::Web::Controller::SSI::template_INCLUDE($self, $file);
-    my $html = "";
 
-    $html .= qq{
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    };
 
     my @evalues = qw(10 1 0.1 1E-3 1E-5 1E-10 1E-20 1E-40 1E-80);
     my $evalue_html = join "\n",  map { $_ eq $evalue ? "<option value=\"$_\" selected>$_</option>" : "<option value=\"$_\">$_</option>" } @evalues;
     
     my $splice_html = $qtype ? 'checked' : '';
     
-    $html .= qq{
+    my $html = qq{
 <div id="enawrapper">
 <form method="post" enctype="multipart/form-data" action="#" id="blastForm" name="iform">
 <input type="hidden" name="jobid" id="jobid" value="$jobid" />
-<input type="hidden" name="jobstatus" id="jobstatus" />
+<input type="hidden" name="sdomain" id="sdomain" value="23" />
 
 <table id="ena-content" class="center" >
 <tr> <td id="ena-seq-td" rowspan="2">
@@ -174,7 +109,7 @@ $evalue_html
 <table>
 <tr>
 <td>
-<input type="submit" value="Submit" id="submit-button" class="jobSmall" style="float:right" onclick="resetStatus();" />
+<input type="submit" value="Submit" id="submit-button" class="jobSmall" style="float:right" />
 </td>
 <td style="width:190px;">
 <div id="progress">
@@ -194,41 +129,19 @@ $evalue_html
 </tr>
 </table>
 
-};
-
-if ($fn && $fn eq 'loadResults') {
-	my $result = new ENAResult( { _jobid => $jobid, _species_defs => $species_defs } );
-	$result->fetch_alignments($column, $section, $page_size);
-	$html .= $result->render;
-}
-
-$html .= qq{
 </form>
+<div id="ena-results" style="width:100%">
+</div>
+
 </div>
 };
 
+  $html = sprintf '<div class="js_panel"><input type="hidden" class="panel_type" value="ENASearch"/>%s</div>', $html;
+  return $html;
 
 # $file = "/ssi/species/extra_${species}.html";
 # $html .= EnsEMBL::Web::Controller::SSI::template_INCLUDE($self, $file);
 
-  return $html;
-}
-
-
-sub getResults {
-  my ($search, $maxval) = @_;
-
-  my $hitcount = 0;
-  my $status;
-
-  while (($status = $search->status) =~ /RUNNING_SEARCH|COMPLETE/) {
-#      warn "$status";
-      if (my @alignments = @{$search->new_alignments($maxval) || []}) {
-	$hitcount += scalar(@alignments);
-      }
-      last if ($status eq 'COMPLETE');
-  }
-#  warn " COMPLETED ($status / $hitcount)\n";
 }
 
 1;

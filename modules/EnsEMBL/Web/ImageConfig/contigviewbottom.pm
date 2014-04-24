@@ -22,16 +22,17 @@ use strict;
 
 sub modify {
   my $self = shift;
-  
+
   my $gene_transcript_menu = $self->tree->get_node('gene_transcript');
-  
+
   # create wheat menus
   my $wheat_menu = $self->create_submenu('wheat_alignment', 'Wheat SNPs and alignments');
+
   $gene_transcript_menu->after($wheat_menu);
   
-  my $snp_menu             = $self->create_submenu('wheat_assembly', 'Wheat Assembly and SNPs');
+  my $snp_menu             = $self->create_submenu('wheat_assembly', 'Wheat Assemblies and SNPs');
   my $transcriptomics_menu = $self->create_submenu('wheat_transcriptomics', 'Wheat transcriptomics');
-  my $est_menu             = $self->create_submenu('wheat_ests', 'Wheat ESTs');
+  my $est_menu             = $self->create_submenu('wheat_ests', 'Wheat UniGene and ESTs');
   
   $wheat_menu->append($snp_menu);
   $wheat_menu->append($transcriptomics_menu);
@@ -50,8 +51,8 @@ sub modify {
     }
   } 
   
-  # move some ESTs
-  foreach (qw(dna_align_otherfeatures_wheat_unigene_exonerate dna_align_otherfeatures_wheat_est_exonerate)) {
+  # move some EST
+  foreach (qw(dna_align_otherfeatures_wheat_unigene_exonerate dna_align_otherfeatures_wheat_est_exonerate dna_align_otherfeatures_wheat_est_star)) {
     if (my $node = $self->tree->get_node($_)) {
       $node->remove;
       $est_menu->append_children($node);
@@ -61,9 +62,12 @@ sub modify {
   $self->load_configured_bam;
   $self->load_configured_bed;
   $self->load_configured_bedgraph;
+  $self->load_configured_bigwig;
+  $self->load_configured_bigbed;
   $self->load_configured_mw;
   
   $self->add_track('information', 'gradient_legend', 'Gradient Legend', 'gradient_legend', { strand => 'r' });
 } 
 
 1;
+

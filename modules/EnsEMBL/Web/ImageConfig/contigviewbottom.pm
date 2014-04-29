@@ -58,11 +58,16 @@ sub modify {
     }
   } 
   
+
+  # add resequencing menu - put this in core webcode?
+  $self->tree->get_node('functional')->after( $self->create_submenu('resequencing', 'Resequencing') ); 
+
   $self->load_configured_bam;
   $self->load_configured_bed;
   $self->load_configured_bedgraph;
   $self->load_configured_mw;
-  
+  $self->load_configured_vcf;
+
   $self->add_track('information', 'gradient_legend', 'Gradient Legend', 'gradient_legend', { strand => 'r' });
 } 
 

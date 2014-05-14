@@ -69,8 +69,6 @@ sub modify {
   $self->load_configured_bigbed;
   $self->load_configured_mw;
   $self->load_configured_vcf;
-  
-  $self->add_track('information', 'gradient_legend', 'Gradient Legend', 'gradient_legend', { strand => 'r' });
 } 
 
 1;

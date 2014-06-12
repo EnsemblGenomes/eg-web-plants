@@ -71,7 +71,7 @@ sub update_conf {
       Triticum_urartu
       Vitis_vinifera
       Zea_mays
-      Streococcus_lucimarinus
+      Ostreococcus_lucimarinus
       Brassica_oleracea
       Oryza_rufipogon
       Leersia_perrieri

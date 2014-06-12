@@ -41,6 +41,12 @@ sub update_conf {
     $SiteDefs::__species_aliases{ 'Triticum_urartu'         } = [qw(tu)];
     $SiteDefs::__species_aliases{ 'Vitis_vinifera'          } = [qw(vv)];
     $SiteDefs::__species_aliases{ 'Musa_acuminata'          } = [qw(ma)];
+# Release 23
+    $SiteDefs::__species_aliases{ 'Streococcus_lucimarinus' } = [qw(sl)];
+    $SiteDefs::__species_aliases{ 'Brassica_oleracea'       } = [qw(bo)];
+    $SiteDefs::__species_aliases{ 'Oryza_rufipogon'         } = [qw(or)];
+    $SiteDefs::__species_aliases{ 'Leersia_perrieri'        } = [qw(lp)];
+    $SiteDefs::__species_aliases{ 'Theobroma_cacao'         } = [qw(tc)];
 
     $SiteDefs::ENSEMBL_PRIMARY_SPECIES   = 'Oryza_sativa';
     $SiteDefs::ENSEMBL_SECONDARY_SPECIES = 'Arabidopsis_thaliana';

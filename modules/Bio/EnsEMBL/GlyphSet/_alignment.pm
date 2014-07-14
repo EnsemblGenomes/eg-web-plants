@@ -150,8 +150,9 @@ sub render_normal {
           next;
         }
       }
-      
-      if ($config) {
+## EG - temporary fix for https://github.com/Ensembl/ensembl-webcode/pull/71      
+      if ($config and $config->{'useScore'}) {
+##
         my $score = $feat[0][2]->score || 0;
         
         # implicit_colour means that a colour has been arbitrarily assigned

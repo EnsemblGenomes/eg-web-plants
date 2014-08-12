@@ -69,6 +69,9 @@ sub modify {
   $self->load_configured_bigbed;
   $self->load_configured_mw;
   $self->load_configured_vcf;
+
+  my $ml = $self->get_node('fg_methylation_legend');
+  $ml->remove if $ml;
 } 
 
 # EG should be exactly as in main ensembl code, but with loading of bigbed, bigwig etc files commented out, so they are loaded after we have called our modify function and added new menus

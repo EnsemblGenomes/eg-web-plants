@@ -28,7 +28,7 @@ sub content {
   my $html = $self->PREV::content(@_);
 
   if ($html and $self->hub->species eq 'Hordeum_vulgare') {
-    $html .= $self->_warning('Non-standard assembly', '<p>The structure of this genome assembly differs significantly from conventional assemblies. Please see the detailed description of this assembly on the <a href="/Hordeum_vulgare/Info/Annotation/#assembly">barley about page</a></p>');
+    $html .= $self->_warning('Non-standard assembly', '<p>This assembly comprises sets of contigs co-located in unordered bins due to linkage with markers on physical and/or genetic maps. <a href="/Hordeum_vulgare/Info/Annotation/#assembly">More information</a></p>');
   }
 
   return $html;

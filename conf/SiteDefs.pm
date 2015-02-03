@@ -59,6 +59,7 @@ sub update_conf {
       Oryza_meridionalis
       Oryza_nivara
       Oryza_punctata
+      Oryza_longistaminata
       Physcomitrella_patens
       Populus_trichocarpa
       Prunus_persica

@@ -27,6 +27,7 @@ sub update_conf {
 
     $SiteDefs::ENSEMBL_BASE_URL          = 'http://plants.ensembl.org';
 
+    $SiteDefs::EG_DIVISION      = 'plants';
     $SiteDefs::ENSEMBL_SITETYPE = 'Ensembl Plants';
     $SiteDefs::SITE_NAME        = 'Ensembl Plants';
     $SiteDefs::SITE_FTP         = 'ftp://ftp.ensemblgenomes.org/pub/plants';

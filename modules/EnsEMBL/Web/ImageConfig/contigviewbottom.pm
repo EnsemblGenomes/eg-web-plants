@@ -81,7 +81,7 @@ sub init {
   $self->set_parameters({
     toolbars        => { top => 1, bottom => 1 },
     sortable_tracks => 'drag', # allow the user to reorder tracks on the image
-    datahubs        => 1,      # allow datahubs
+    trackhubs        => 1,     # allow trackhubs
     opt_halfheight  => 0,      # glyphs are half-height [ probably removed when this becomes a track config ]
     opt_lines       => 1,      # draw registry lines
   });
@@ -176,7 +176,7 @@ sub init {
   # Add in additional tracks
   $self->load_tracks;
   $self->load_configured_das;
-  $self->load_configured_datahubs;
+  $self->load_configured_trackhubs;
 #  $self->load_configured_bigwig;
 #  $self->load_configured_bigbed;
 #  $self->load_configured_bam;

@@ -74,7 +74,7 @@
         <div>
           <label for="seq" id="seqlabel" class="clearfix">
             Paste in your sequence or use the <a href="#" id="example">example</a>
-            <a href="#" class="constant help-header _ht" title="Click the example link to add a sequence to the search box.  The form requires a single sequence protein in FASTA format, with or without a header line."><span class="sprite help_icon"></span></a>
+            <a class="constant help-header _ht" title="Click the example link to add a sequence to the search box.  The form requires a single sequence protein in FASTA format, with or without a header line."><span class="sprite help_icon"></span></a>
           </label>
         </div>
 
@@ -106,13 +106,15 @@ window.onload = function() {
       }
     });
 
-    $('#clear').click(function(){ 
+    $('#clear').click(function(event){ 
       setSeq('');
       clearError();
+      event.preventDefault();
     });
 
-    $('#example').click(function(){ 
-      setSeq($('#example-seq').text()) 
+    $('#example').click(function(event){ 
+      setSeq($('#example-seq').text())
+      event.preventDefault();
     });
 
     function error(msg) {

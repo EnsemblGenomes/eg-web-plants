@@ -23,24 +23,6 @@ use strict;
 sub modify {
   my $self = shift;
 
-  # move some SNPSs
-  my $snp_menu = $self->tree->get_node('wheat_assembly');
-  foreach (qw(simple_core_wheat_snp_a simple_core_wheat_snp_b)) {
-    if (my $node = $self->tree->get_node($_)) {
-      $node->remove;
-      $snp_menu->append_children($node);
-    }
-  } 
-  
-  # move some EST
-  my $est_menu = $self->tree->get_node('wheat_ests');
-  foreach (qw(dna_align_otherfeatures_wheat_unigene_exonerate dna_align_otherfeatures_wheat_est_exonerate dna_align_otherfeatures_wheat_est_star)) {
-    if (my $node = $self->tree->get_node($_)) {
-      $node->remove;
-      $est_menu->append_children($node);
-    }
-  } 
-  
   my $ml = $self->get_node('fg_methylation_legend');
   $ml->remove if $ml;
 } 

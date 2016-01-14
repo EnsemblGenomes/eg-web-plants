@@ -25,10 +25,10 @@ use previous qw(links);
 
 sub links {
   my $self  = shift;
-  my @links = $self->PREV::links;
+  my $links = $self->PREV::links;
   return [
     'hmmer', '<a class="constant" href="/hmmer">HMMER</a>', 
-    @links
+    @$links
   ];
 }
 

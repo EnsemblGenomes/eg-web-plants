@@ -59,7 +59,7 @@ sub render {
   my $link = '/hmmer';
   $table->add_row({
     'name' => sprintf('<b><a class="nodeco" href="%s">HMMER</a></b>', $link),
-    'desc' => 'Search our genomes for your DNA or protein sequence.',
+    'desc' => 'Quickly search our genomes for your protein sequence.',
     'tool' => sprintf('<a href="%s" class="nodeco"><img src="%s16/tool.png" alt="Tool" title="Go to online tool" /></a>', $link, $img_url),
     'code' => '',
     'docs' => ''
@@ -70,7 +70,7 @@ sub render {
     my $link = $hub->url({'species' => $sp, qw(type Tools action Blast)});
     $table->add_row({
       'name' => sprintf('<b><a class="nodeco" href="%s">BLAST</a></b>', $link),
-      'desc' => 'Quickly search our genomes for your protein sequence.',
+      'desc' => 'Search our genomes for your DNA or protein sequence.',
       'tool' => sprintf('<a href="%s" class="nodeco"><img src="%s16/tool.png" alt="Tool" title="Go to online tool" /></a>', $link, $img_url),
       'code' => '',
       'docs' => ''

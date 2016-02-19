@@ -20,76 +20,13 @@ limitations under the License.
 
 package EnsEMBL::Web::ImageConfig::MultiBottom;
 
+use strict;
+use previous qw(init);
+
 sub init {
   my $self = shift;
-  
-  $self->set_parameters({
-    sortable_tracks => 1,  # allow the user to reorder tracks
-    opt_lines       => 1,  # register lines
-    spritelib       => { default => $self->species_defs->ENSEMBL_WEBROOT . '/htdocs/img/sprites' },
-  });
-  
-
-## EG - ENSEMBL-3644
-  my $site = $SiteDefs::ENSEMBL_SITETYPE =~ s/Ensembl //r; #/
-  my $sp_img_48 = $self->species_defs->ENSEMBL_SERVERROOT . '/eg-web-' . lc($site) . '/htdocs/i/species/48'; 
-##  
-  if(-e $sp_img_48) {
-    $self->set_parameters({ spritelib => {
-      %{$self->get_parameter('spritelib')||{}},
-      species => $sp_img_48,
-    }});
-  }
-
-  # Add menus in the order you want them for this display
-  $self->create_menus(qw(
-    sequence
-    marker
-    transcript
-    prediction
-    dna_align_cdna
-    dna_align_est 
-    dna_align_rna 
-    dna_align_other 
-    protein_align
-    rnaseq
-    simple
-    misc_feature
-    variation 
-    somatic 
-    functional
-    oligo
-    repeat
-    user_data
-    decorations 
-    information 
-  ));
-  
-  # Add in additional tracks
-  $self->load_tracks;
-  $self->load_configured_das;
-  $self->image_resize = 1;
-
-## EG PLANTS
+  $self->PREV::init;
   $self->modify_configs([ 'prediction' ], { display => 'off' });
-##  
-    
-  $self->add_tracks('sequence', 
-    [ 'contig', 'Contigs',  'contig',   { display => 'normal', strand => 'r', description => 'Track showing underlying assembly contigs' }],
-    [ 'seq',    'Sequence', 'sequence', { display => 'normal', strand => 'b', description => 'Track showing sequence in both directions. Only displayed at 1Kb and below.', colourset => 'seq', threshold => 1, depth => 1 }],
-  );
-  
-  $self->add_tracks('decorations',
-    [ 'scalebar',  '', 'scalebar',      { display => 'normal', strand => 'b', name => 'Scale bar', description => 'Shows the scalebar' }],
-    [ 'ruler',     '', 'ruler',         { display => 'normal', strand => 'b', name => 'Ruler',     description => 'Shows the length of the region being displayed' }],
-    [ 'draggable', '', 'draggable',     { display => 'normal', strand => 'b', menu => 'no' }],
-    [ 'nav',       '', 'navigation',    { display => 'normal', strand => 'b', menu => 'no' }],
-## EG ENSEMBL-2967 - add species label     
-    [ 'title',     '', 'species_title', { display => 'normal', strand => 'b', menu => 'no' }],
-##    
-  );
-  
-  $_->set('display', 'off') for grep $_->id =~ /^chr_band_/, $self->get_node('decorations')->nodes; # Turn off chromosome bands by default
 }
 
 1;

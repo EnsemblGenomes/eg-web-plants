@@ -1,0 +1,25 @@
+{
+    "collections": [
+        {
+            "id": "Duitama et al. 2015",
+            "species": "oryza_sativa",
+            "assembly": "IRGSP-1.0",
+            "type": "remote",
+            "filename_template": "ftp://ftp.ensemblgenomes.org/pub/misc_data/vcf/oryza_sativa/duitama_et_al_2015.vcf.gz",
+            "use_seq_region_synonyms": 1,
+            "strict_name_match": 0
+        },
+        
+        {
+            "id": "Zhao et al. 2010",
+            "species": "oryza_sativa",
+            "assembly": "IRGSP-1.0",
+            "type": "remote",
+            "filename_template": "ftp://ftp.ensemblgenomes.org/pub/misc_data/vcf/oryza_sativa/zhao_et_al_2010.vcf.gz",
+            "chromosomes": [
+                "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
+            ],
+            "strict_name_match": 0
+        }
+    ]
+}

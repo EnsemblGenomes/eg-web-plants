@@ -78,6 +78,11 @@ sub update_conf {
       Oryza_rufipogon
       Leersia_perrieri
       Theobroma_cacao
+      Beta_vulgaris
+      Trifolium_pratense
+      Brassica_napus
+    ), qw(
+      Plants_rhodophyta1
     )];
 
     push @SiteDefs::ENSEMBL_HTDOCS_DIRS, $SiteDefs::ENSEMBL_SERVERROOT. '/../biomarts/plants/biomart-perl/htdocs';

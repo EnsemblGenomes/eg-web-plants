@@ -27,7 +27,7 @@ sub content {
   
   my $html = $self->PREV::content(@_);
     
-  if ($html and $self->hub->species =~ /^(Hordeum_vulgare|Triticum_aestivum)$/) {
+  if ($html and $self->hub->species =~ /^Hordeum_vulgare$/) {
     $html .= $self->_warning('Non-standard assembly', '<p>This assembly comprises sets of contigs co-located by linkage with markers on physical and/or genetic maps. Internally, each set (or "bin") is arbitrarily ordered.  The scope of each bin is indicated in a track in the panel below. <a href="/' . $self->hub->species . '/Info/Annotation/#assembly">More information</a></p>');
   }
 

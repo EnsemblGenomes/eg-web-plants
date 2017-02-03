@@ -83,8 +83,6 @@ sub update_conf {
       Beta_vulgaris
       Trifolium_pratense
       Brassica_napus
-    ), qw(
-      Plants_rhodophyta1
     )];
 
     push @SiteDefs::ENSEMBL_HTDOCS_DIRS, $SiteDefs::ENSEMBL_SERVERROOT. '/../biomarts/plants/biomart-perl/htdocs';

@@ -46,7 +46,9 @@ sub update_conf {
       Brachypodium_distachyon
       Brassica_rapa
       Chlamydomonas_reinhardtii
+      Chondrus_crispus
       Cyanidioschyzon_merolae
+      Galdieria_sulphuraria
       Glycine_max
       Hordeum_vulgare
       Medicago_truncatula

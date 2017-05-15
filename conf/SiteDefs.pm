@@ -38,51 +38,51 @@ sub update_conf {
         $SiteDefs::ENSEMBL_SERVERROOT.'/eg-web-plants/perl',
       );
 
-    $SiteDefs::ENSEMBL_DATASETS = [sort qw(
-      Arabidopsis_lyrata
-      Arabidopsis_thaliana
-      Aegilops_tauschii
-      Amborella_trichopoda
-      Brachypodium_distachyon
-      Brassica_rapa
-      Chlamydomonas_reinhardtii
-      Chondrus_crispus
-      Cyanidioschyzon_merolae
-      Galdieria_sulphuraria
-      Glycine_max
-      Hordeum_vulgare
-      Medicago_truncatula
-      Musa_acuminata
-      Oryza_brachyantha
-      Oryza_glaberrima
-      Oryza_indica
-      Oryza_sativa
-      Oryza_barthii
-      Oryza_glumaepatula
-      Oryza_meridionalis
-      Oryza_nivara
-      Oryza_punctata
-      Oryza_longistaminata
-      Physcomitrella_patens
-      Populus_trichocarpa
-      Prunus_persica
-      Selaginella_moellendorffii
-      Setaria_italica
-      Solanum_lycopersicum
-      Solanum_tuberosum
-      Sorghum_bicolor
-      Triticum_aestivum
-      Triticum_urartu
-      Vitis_vinifera
-      Zea_mays
-      Ostreococcus_lucimarinus
-      Brassica_oleracea
-      Oryza_rufipogon
-      Leersia_perrieri
-      Theobroma_cacao
-      Beta_vulgaris
-      Trifolium_pratense
-      Brassica_napus
+    $SiteDefs::PRODUCTION_NAMES = [sort qw(
+      arabidopsis_lyrata
+      arabidopsis_thaliana
+      aegilops_tauschii
+      amborella_trichopoda
+      brachypodium_distachyon
+      brassica_rapa
+      chlamydomonas_reinhardtii
+      chondrus_crispus
+      cyanidioschyzon_merolae
+      galdieria_sulphuraria
+      glycine_max
+      hordeum_vulgare
+      medicago_truncatula
+      musa_acuminata
+      oryza_brachyantha
+      oryza_glaberrima
+      oryza_indica
+      oryza_sativa
+      oryza_barthii
+      oryza_glumaepatula
+      oryza_meridionalis
+      oryza_nivara
+      oryza_punctata
+      oryza_longistaminata
+      physcomitrella_patens
+      populus_trichocarpa
+      prunus_persica
+      selaginella_moellendorffii
+      setaria_italica
+      solanum_lycopersicum
+      solanum_tuberosum
+      sorghum_bicolor
+      triticum_aestivum
+      triticum_urartu
+      vitis_vinifera
+      zea_mays
+      ostreococcus_lucimarinus
+      brassica_oleracea
+      oryza_rufipogon
+      leersia_perrieri
+      theobroma_cacao
+      beta_vulgaris
+      trifolium_pratense
+      brassica_napus
     )];
 
     push @SiteDefs::ENSEMBL_HTDOCS_DIRS, $SiteDefs::ENSEMBL_SERVERROOT. '/../biomarts/plants/biomart-perl/htdocs';

@@ -1,0 +1,23 @@
+{
+    
+    "collections": [
+        
+        {
+            "id": "The 1001 Genomes Project",
+            "species": "arabidopsis_thaliana",
+            "assembly": "TAIR10",
+            "type": "remote",
+            "filename_template": "http://ftp.ebi.ac.uk/pub/databases/eva/PRJNA273563/submitted_files/1001genomes_snp-short-indel_only_ACGTN_v3.1.snpeff.garys.final.vcf.gz",
+            "chromosomes": [
+                "1", "2", "3", "4", "5"
+            ],
+            
+            "strict_name_match": 0,
+            
+            "sample_prefix": "Ecotype ID: "
+            
+        }
+        
+    ]
+    
+}

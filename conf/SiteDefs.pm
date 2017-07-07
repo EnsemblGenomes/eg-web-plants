@@ -47,10 +47,12 @@ sub update_conf {
       brassica_rapa
       chlamydomonas_reinhardtii
       chondrus_crispus
+      corchorus_capsularis
       cyanidioschyzon_merolae
       galdieria_sulphuraria
       glycine_max
       hordeum_vulgare
+      manihot_esculenta
       medicago_truncatula
       musa_acuminata
       oryza_brachyantha

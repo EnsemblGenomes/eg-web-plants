@@ -53,7 +53,6 @@ sub update_conf {
       galdieria_sulphuraria
       glycine_max
       hordeum_vulgare
-      manihot_esculenta
       medicago_truncatula
       musa_acuminata
       oryza_brachyantha

@@ -85,6 +85,19 @@ sub update_conf {
       beta_vulgaris
       trifolium_pratense
       brassica_napus
+      cucumis_sativus
+      dioscorea_rotundata
+      gossypium_raimondii
+      helianthus_annuus
+      lupinus_angustifolius
+      manihot_esculenta
+      nicotiana_attenuata
+      phaseolus_vulgaris
+      triticum_aestivum_cadenza
+      triticum_aestivum_paragon
+      triticum_aestivum_claire
+      triticum_aestivum_robigus
+      triticum_turgidum
     )];
 
     push @SiteDefs::ENSEMBL_HTDOCS_DIRS, $SiteDefs::ENSEMBL_SERVERROOT. '/../biomarts/plants/biomart-perl/htdocs';

@@ -27,6 +27,8 @@ sub update_conf {
 
     $SiteDefs::ENSEMBL_BASE_URL          = 'http://plants.ensembl.org';
 
+    # TODO dedup these if equivalent
+    $SiteDefs::DIVISION         = 'plants';
     $SiteDefs::EG_DIVISION      = 'plants';
     $SiteDefs::SUBDOMAIN_DIR    = 'plants';
     $SiteDefs::ENSEMBL_SITETYPE = 'Ensembl Plants';

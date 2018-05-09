@@ -24,4 +24,9 @@ sub insdc_accession {
  return 0;
 }
 
+sub getReactomeXrefs() {
+  my $self   = shift;
+  return $self->Obj->get_all_DBEntries('Plant_Reactome_Pathway');
+}
+
 1;

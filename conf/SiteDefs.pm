@@ -95,6 +95,9 @@ sub update_conf {
       manihot_esculenta
       nicotiana_attenuata
       phaseolus_vulgaris
+      cajanus_cajan
+      daucus_carota
+      vigna_angularis
     )];
 
     push @SiteDefs::ENSEMBL_HTDOCS_DIRS, $SiteDefs::ENSEMBL_SERVERROOT. '/../biomarts/plants/biomart-perl/htdocs';

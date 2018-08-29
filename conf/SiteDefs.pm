@@ -62,7 +62,7 @@ sub update_conf {
       oryza_indica
       oryza_sativa
       oryza_barthii
-      oryza_glumaepatula
+      oryza_glumipatula
       oryza_meridionalis
       oryza_nivara
       oryza_punctata
@@ -95,9 +95,10 @@ sub update_conf {
       manihot_esculenta
       nicotiana_attenuata
       phaseolus_vulgaris
-      cajanus_cajan
       daucus_carota
       vigna_angularis
+      vigna_radiata
+      triticum_dicoccoides
     )];
 
     push @SiteDefs::ENSEMBL_HTDOCS_DIRS, $SiteDefs::ENSEMBL_SERVERROOT. '/../biomarts/plants/biomart-perl/htdocs';

@@ -42,6 +42,7 @@ sub update_conf {
       );
 
     $SiteDefs::PRODUCTION_NAMES = [sort qw(
+      arabidopsis_halleri
       arabidopsis_lyrata
       arabidopsis_thaliana
       aegilops_tauschii

@@ -100,6 +100,9 @@ sub update_conf {
       vigna_angularis
       vigna_radiata
       triticum_dicoccoides
+      ctinidia_chinensis
+      panicum_hallii_fil2
+      panicum_hallii_hal2
     )];
 
     push @SiteDefs::ENSEMBL_HTDOCS_DIRS, $SiteDefs::ENSEMBL_SERVERROOT. '/../biomarts/plants/biomart-perl/htdocs';

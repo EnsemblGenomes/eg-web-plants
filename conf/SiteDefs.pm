@@ -103,6 +103,10 @@ sub update_conf {
       actinidia_chinensis
       panicum_hallii_fil2
       panicum_hallii_hal2
+      triticum_aestivum_cadenza 
+      triticum_aestivum_paragon 
+      triticum_aestivum_claire  
+      triticum_aestivum_robigus
     )];
 
     push @SiteDefs::ENSEMBL_HTDOCS_DIRS, $SiteDefs::ENSEMBL_SERVERROOT. '/../biomarts/plants/biomart-perl/htdocs';

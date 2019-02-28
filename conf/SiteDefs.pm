@@ -22,8 +22,8 @@ sub update_conf {
     $SiteDefs::ENSEMBL_PORT           = 8003;
     $SiteDefs::ENSEMBL_SERVERNAME     = 'plants.ensembl.org';
 
-    $SiteDefs::ENSEMBL_PRIMARY_SPECIES   = 'Oryza_sativa';
-    $SiteDefs::ENSEMBL_SECONDARY_SPECIES = 'Arabidopsis_thaliana';
+    $SiteDefs::ENSEMBL_PRIMARY_SPECIES   = 'Triticum_aestivum';
+    $SiteDefs::ENSEMBL_SECONDARY_SPECIES = 'Triticum_aestivum';
 
     $SiteDefs::ENSEMBL_BASE_URL          = 'http://plants.ensembl.org';
     $SiteDefs::ENSEMBL_VP_ENABLED = 0;
@@ -42,72 +42,13 @@ sub update_conf {
       );
 
     $SiteDefs::PRODUCTION_NAMES = [sort qw(
-      arabidopsis_halleri
-      arabidopsis_lyrata
-      arabidopsis_thaliana
-      aegilops_tauschii
-      amborella_trichopoda
-      brachypodium_distachyon
-      brassica_rapa
-      chlamydomonas_reinhardtii
-      chondrus_crispus
-      corchorus_capsularis
-      cyanidioschyzon_merolae
-      galdieria_sulphuraria
-      glycine_max
-      hordeum_vulgare
-      medicago_truncatula
-      musa_acuminata
-      oryza_brachyantha
-      oryza_glaberrima
-      oryza_indica
-      oryza_sativa
-      oryza_barthii
-      oryza_glumipatula
-      oryza_meridionalis
-      oryza_nivara
-      oryza_punctata
-      oryza_longistaminata
-      physcomitrella_patens
-      populus_trichocarpa
-      prunus_persica
-      selaginella_moellendorffii
-      setaria_italica
-      solanum_lycopersicum
-      solanum_tuberosum
-      sorghum_bicolor
       triticum_aestivum
-      triticum_urartu
-      vitis_vinifera
-      zea_mays
-      ostreococcus_lucimarinus
-      brassica_oleracea
-      oryza_rufipogon
-      leersia_perrieri
-      theobroma_cacao
-      beta_vulgaris
-      trifolium_pratense
-      brassica_napus
-      cucumis_sativus
-      dioscorea_rotundata
-      gossypium_raimondii
-      helianthus_annuus
-      lupinus_angustifolius
-      manihot_esculenta
-      nicotiana_attenuata
-      phaseolus_vulgaris
-      daucus_carota
-      vigna_angularis
-      vigna_radiata
-      triticum_dicoccoides
-      actinidia_chinensis
-      panicum_hallii_fil2
-      panicum_hallii_hal2
       triticum_aestivum_cadenza 
       triticum_aestivum_paragon 
       triticum_aestivum_claire  
       triticum_aestivum_robigus
     )];
+
 
     push @SiteDefs::ENSEMBL_HTDOCS_DIRS, $SiteDefs::ENSEMBL_SERVERROOT. '/../biomarts/plants/biomart-perl/htdocs';
       

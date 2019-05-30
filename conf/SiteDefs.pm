@@ -42,32 +42,51 @@ sub update_conf {
       );
 
     $SiteDefs::PRODUCTION_NAMES = [sort qw(
+      actinidia_chinensis
       arabidopsis_halleri
       arabidopsis_lyrata
       arabidopsis_thaliana
       aegilops_tauschii
       amborella_trichopoda
+      beta_vulgaris
       brachypodium_distachyon
+      brassica_napus
+      brassica_oleracea
       brassica_rapa
       chlamydomonas_reinhardtii
       chondrus_crispus
       corchorus_capsularis
+      cucumis_sativus
       cyanidioschyzon_merolae
+      daucus_carota
+      dioscorea_rotundata
       galdieria_sulphuraria
       glycine_max
+      gossypium_raimondii
+      helianthus_annuus
       hordeum_vulgare
+      leersia_perrieri
+      lupinus_angustifolius
+      manihot_esculenta
+      marchantia_polymorpha
       medicago_truncatula
       musa_acuminata
+      nicotiana_attenuata
+      oryza_barthii
       oryza_brachyantha
       oryza_glaberrima
-      oryza_indica
-      oryza_sativa
-      oryza_barthii
       oryza_glumipatula
+      oryza_indica
+      oryza_longistaminata
       oryza_meridionalis
       oryza_nivara
       oryza_punctata
-      oryza_longistaminata
+      oryza_rufipogon
+      oryza_sativa
+      ostreococcus_lucimarinus
+      panicum_hallii_fil2
+      panicum_hallii_hal2
+      phaseolus_vulgaris
       physcomitrella_patens
       populus_trichocarpa
       prunus_persica
@@ -76,33 +95,15 @@ sub update_conf {
       solanum_lycopersicum
       solanum_tuberosum
       sorghum_bicolor
-      triticum_aestivum
-      triticum_urartu
-      vitis_vinifera
-      zea_mays
-      ostreococcus_lucimarinus
-      brassica_oleracea
-      oryza_rufipogon
-      leersia_perrieri
       theobroma_cacao
-      beta_vulgaris
       trifolium_pratense
-      brassica_napus
-      cucumis_sativus
-      dioscorea_rotundata
-      gossypium_raimondii
-      helianthus_annuus
-      lupinus_angustifolius
-      manihot_esculenta
-      nicotiana_attenuata
-      phaseolus_vulgaris
-      daucus_carota
+      triticum_aestivum
+      triticum_dicoccoides
+      triticum_urartu
       vigna_angularis
       vigna_radiata
-      triticum_dicoccoides
-      actinidia_chinensis
-      panicum_hallii_fil2
-      panicum_hallii_hal2
+      vitis_vinifera
+      zea_mays
     )];
 
     push @SiteDefs::ENSEMBL_HTDOCS_DIRS, $SiteDefs::ENSEMBL_SERVERROOT. '/../biomarts/plants/biomart-perl/htdocs';

@@ -53,13 +53,17 @@ sub update_conf {
       brassica_napus
       brassica_oleracea
       brassica_rapa
+      capsicum_annuum
       chlamydomonas_reinhardtii
       chondrus_crispus
+      coffea_canephora
       corchorus_capsularis
       cucumis_sativus
       cyanidioschyzon_merolae
+      cynara_cardunculus
       daucus_carota
       dioscorea_rotundata
+      eragrostis_tef
       galdieria_sulphuraria
       glycine_max
       gossypium_raimondii
@@ -99,6 +103,7 @@ sub update_conf {
       trifolium_pratense
       triticum_aestivum
       triticum_dicoccoides
+      triticum_turgidum 
       triticum_urartu
       vigna_angularis
       vigna_radiata

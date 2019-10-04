@@ -56,6 +56,7 @@ sub update_conf {
       capsicum_annuum
       chlamydomonas_reinhardtii
       chondrus_crispus
+      citrus_clementina
       coffea_canephora
       corchorus_capsularis
       cucumis_sativus
@@ -69,6 +70,7 @@ sub update_conf {
       gossypium_raimondii
       helianthus_annuus
       hordeum_vulgare
+      ipomoea_triloba
       leersia_perrieri
       lupinus_angustifolius
       manihot_esculenta
@@ -93,7 +95,9 @@ sub update_conf {
       phaseolus_vulgaris
       physcomitrella_patens
       populus_trichocarpa
+      prunus_avium
       prunus_persica
+      saccharum_spontaneum
       selaginella_moellendorffii
       setaria_italica
       solanum_lycopersicum

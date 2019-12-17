@@ -26,7 +26,6 @@ sub update_conf {
     $SiteDefs::ENSEMBL_SECONDARY_SPECIES = 'Arabidopsis_thaliana';
 
     $SiteDefs::ENSEMBL_BASE_URL          = 'http://plants.ensembl.org';
-    $SiteDefs::ENSEMBL_VP_ENABLED = 0;
     # TODO dedup these if equivalent
     $SiteDefs::DIVISION         = 'plants';
     $SiteDefs::EG_DIVISION      = 'plants';

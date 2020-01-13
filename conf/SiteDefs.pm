@@ -42,6 +42,7 @@ sub update_conf {
 
     $SiteDefs::PRODUCTION_NAMES = [sort qw(
       actinidia_chinensis
+      ananas_comosus
       arabidopsis_halleri
       arabidopsis_lyrata
       arabidopsis_thaliana
@@ -53,6 +54,7 @@ sub update_conf {
       brassica_oleracea
       brassica_rapa
       capsicum_annuum
+      chara_braunii
       chlamydomonas_reinhardtii
       chondrus_crispus
       citrus_clementina
@@ -63,6 +65,7 @@ sub update_conf {
       cynara_cardunculus
       daucus_carota
       dioscorea_rotundata
+      eragrostis_curvula
       eragrostis_tef
       galdieria_sulphuraria
       glycine_max
@@ -72,11 +75,13 @@ sub update_conf {
       ipomoea_triloba
       leersia_perrieri
       lupinus_angustifolius
+      malus_domestica
       manihot_esculenta
       marchantia_polymorpha
       medicago_truncatula
       musa_acuminata
       nicotiana_attenuata
+      olea_europaea_sylvestris
       oryza_barthii
       oryza_brachyantha
       oryza_glaberrima
@@ -93,8 +98,10 @@ sub update_conf {
       panicum_hallii_hal2
       phaseolus_vulgaris
       physcomitrella_patens
+      pistacia_vera
       populus_trichocarpa
       prunus_avium
+      prunus_dulcis
       prunus_persica
       saccharum_spontaneum
       selaginella_moellendorffii
@@ -102,7 +109,8 @@ sub update_conf {
       solanum_lycopersicum
       solanum_tuberosum
       sorghum_bicolor
-      theobroma_cacao
+      theobroma_cacao_criollo
+      theobroma_cacao_matina
       trifolium_pratense
       triticum_aestivum
       triticum_dicoccoides

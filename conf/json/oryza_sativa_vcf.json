@@ -7,7 +7,7 @@
             "species": "oryza_sativa",
             "assembly": "IRGSP-1.0",
             "type": "local",
-            "filename_template": "/vcf/oryza_sativa/bgi_snps_2004.vcf.gz",
+            "filename_template": "/oryza_sativa/IRGSP-1.0/variation_genotype/bgi_snps_2004.vcf.gz",
             "use_seq_region_synonyms": 1,
             "chromosomes": [
                 "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
@@ -20,7 +20,7 @@
             "species": "oryza_sativa",
             "assembly": "IRGSP-1.0",
             "type": "local",
-            "filename_template": "/vcf/oryza_sativa/duitama_et_al_2015.vcf.gz",
+            "filename_template": "/oryza_sativa/IRGSP-1.0/variation_genotype/duitama_et_al_2015.vcf.gz",
             "use_seq_region_synonyms": 1,
             "chromosomes": [
                 "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
@@ -33,7 +33,7 @@
             "species": "oryza_sativa",
             "assembly": "IRGSP-1.0",
             "type": "local",
-            "filename_template": "/vcf/oryza_sativa/mcnally_et_al_2009.vcf.gz",
+            "filename_template": "/oryza_sativa/IRGSP-1.0/variation_genotype/mcnally_et_al_2009.vcf.gz",
             "use_seq_region_synonyms": 1,
             "chromosomes": [
                 "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
@@ -46,7 +46,7 @@
             "species": "oryza_sativa",
             "assembly": "IRGSP-1.0",
             "type": "local",
-            "filename_template": "/vcf/oryza_sativa/omap_snps_2007_div.vcf.gz",
+            "filename_template": "/oryza_sativa/IRGSP-1.0/variation_genotype/omap_snps_2007_div.vcf.gz",
             "use_seq_region_synonyms": 1,
             "chromosomes": [
                 "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
@@ -59,7 +59,7 @@
             "species": "oryza_sativa",
             "assembly": "IRGSP-1.0",
             "type": "local",
-            "filename_template": "/vcf/oryza_sativa/omap_snps_2007_snv.vcf.gz",
+            "filename_template": "/oryza_sativa/IRGSP-1.0/variation_genotype/omap_snps_2007_snv.vcf.gz",
             "use_seq_region_synonyms": 1,
             "chromosomes": [
                 "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
@@ -72,7 +72,7 @@
             "species": "oryza_sativa",
             "assembly": "IRGSP-1.0",
             "type": "local",
-            "filename_template": "/vcf/oryza_sativa/rice_3k.vcf.gz",
+            "filename_template": "/oryza_sativa/IRGSP-1.0/variation_genotype/rice_3k.vcf.gz",
             "use_seq_region_synonyms": 1,
             "chromosomes": [
                 "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
@@ -85,7 +85,7 @@
             "species": "oryza_sativa",
             "assembly": "IRGSP-1.0",
             "type": "local",
-            "filename_template": "/vcf/oryza_sativa/zhao_et_al_2010.vcf.gz",
+            "filename_template": "/oryza_sativa/IRGSP-1.0/variation_genotype/zhao_et_al_2010.vcf.gz",
             "chromosomes": [
                 "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
             ],

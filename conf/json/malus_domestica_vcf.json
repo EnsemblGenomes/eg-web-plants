@@ -4,7 +4,7 @@
             "id": "FruitBreedomics",
             "species": "malus_domestica",
             "assembly": "ASM211411v1",
-            "type": "remote",
+            "type": "local",
             "filename_template": "/malus_domestica/ASM211411v1/variation_genotype/all_malus_noChr00_noAxiom_MAF005.AltRefOnly.ed.vcf.gz",
             "chromosomes": [
                 "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17"

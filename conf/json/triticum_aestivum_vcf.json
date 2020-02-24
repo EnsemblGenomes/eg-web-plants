@@ -7,7 +7,7 @@
         "species": "triticum_aestivum",
         "assembly": "IWGSC",
         "type": "local",
-        "filename_template": "/triticum_aestivum/IWGSC/variation_genotype/triticum_aestivum/820k.vcf.gz",
+        "filename_template": "/triticum_aestivum/IWGSC/variation_genotype/820k.vcf.gz",
         "chromosomes": [
             "1A","1B","1D", "2A","2B","2D","3A","3B","3D","4A","4B","4D","5A","5B","5D","6A","6B","6D","7A","7B","7D","Un"
         ],
@@ -20,7 +20,7 @@
         "species": "triticum_aestivum",
         "assembly": "IWGSC",
         "type": "local",
-        "filename_template": "/triticum_aestivum/IWGSC/variation_genotype/triticum_aestivum/35k.vcf.gz",
+        "filename_template": "/triticum_aestivum/IWGSC/variation_genotype/35k.vcf.gz",
         "chromosomes": [
             "1A","1B","1D", "2A","2B","2D","3A","3B","3D","4A","4B","4D","5A","5B","5D","6A","6B","6D","7A","7B","7D","Un"
         ],

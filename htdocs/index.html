@@ -2,29 +2,42 @@
 <head>
 <title>[[SPECIESDEFS::SITE_NAME]]</title>           
 </head>
-<body><div class="column-wrapper">
-<div class="column-two">
-<div class="column-padding no-left-margin">
-<div class="tinted-box no-top-margin">
-[[SCRIPT::EnsEMBL::Web::Document::HTML::Bioschema]]
-[[SCRIPT::EnsEMBL::Web::Document::HTML::HomeSearch]]
-</div>
-<div class="plain-box">
-<div class="js_panel">
-<input type="hidden" class="panel_type" value="SpeciesList" />
- [[SCRIPT::EnsEMBL::Web::Document::HTML::GenomeList]]
-</div>
-</div>
-[[INCLUDE::/ssi/outline.inc]]
-[[INCLUDE::/ssi/left_1.inc]]
-[[INCLUDE::/ssi/left_2.inc]]
-</div>
-</div>
-<div class="column-two"><div class="column-padding no-right-margin">
-[[INCLUDE::/ssi/right_1.inc]]
-[[INCLUDE::/ssi/right_2.inc]]
-[[INCLUDE::/ssi/right_3.inc]]
-[[INCLUDE::/ssi/right_4.inc]]
-</div>
+<body>
+<div class="column-wrapper">
+  <div class="column-two">
+    <div class="column-padding no-left-margin">
+      <div class="tinted-box no-top-margin">
+        [[SCRIPT::EnsEMBL::Web::Document::HTML::Bioschema]]
+        [[SCRIPT::EnsEMBL::Web::Document::HTML::HomeSearch]]
+      </div>
+      <div class="plain-box">
+        <div class="js_panel">
+          <input type="hidden" class="panel_type" value="SpeciesList" />
+          [[SCRIPT::EnsEMBL::Web::Document::HTML::GenomeList]]
+        </div>
+      </div>
+      <div class="plain-box"><h2>What's New in Release [[SITEDEFS::SITE_RELEASE_VERSION]]</h2>
+        <div class="info-box embedded-box float-right">
+          [[INCLUDE::/ssi/did_you_know.md]]
+        </div>
+        [[INCLUDE::/ssi/whatsnew.md]]
+      </div>
+    </div>
+  </div>
+  <div class="column-two">
+    <div class="column-padding no-right-margin">
+      <div class="plain-box">
+        [[INCLUDE::/ssi/right_1.md]]
+      </div>
+      <div class="plain-box">
+        [[INCLUDE::/ssi/right_2.md]]
+      </div>
+      <div class="plain-box">
+        [[INCLUDE::/ssi/right_3.md]]
+      </div>
+      <div class="plain-box">
+        [[INCLUDE::/ssi/copyright.inc]]
+      </div>
+  </div>
 </div>
 </body></html>

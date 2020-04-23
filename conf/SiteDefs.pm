@@ -46,6 +46,7 @@ sub update_conf {
       arabidopsis_halleri
       arabidopsis_lyrata
       arabidopsis_thaliana
+      arabis_alpina
       aegilops_tauschii
       amborella_trichopoda
       beta_vulgaris
@@ -54,12 +55,16 @@ sub update_conf {
       brassica_oleracea
       brassica_rapa
       capsicum_annuum
+      camelina_sativa
+      cannabis_sativa_female
       chara_braunii
       chlamydomonas_reinhardtii
       chondrus_crispus
       citrus_clementina
+      citrullus_lanatus
       coffea_canephora
       corchorus_capsularis
+      cucumis_melo
       cucumis_sativus
       cyanidioschyzon_merolae
       cynara_cardunculus
@@ -72,6 +77,7 @@ sub update_conf {
       gossypium_raimondii
       helianthus_annuus
       hordeum_vulgare
+      hordeum_vulgare_goldenpromise
       ipomoea_triloba
       leersia_perrieri
       lupinus_angustifolius
@@ -81,6 +87,7 @@ sub update_conf {
       medicago_truncatula
       musa_acuminata
       nicotiana_attenuata
+      nymphaea_colorata
       olea_europaea_sylvestris
       oryza_barthii
       oryza_brachyantha
@@ -103,9 +110,11 @@ sub update_conf {
       prunus_avium
       prunus_dulcis
       prunus_persica
+      rosa_chinensis
       saccharum_spontaneum
       selaginella_moellendorffii
       setaria_italica
+      setaria_viridis
       solanum_lycopersicum
       solanum_tuberosum
       sorghum_bicolor
@@ -113,6 +122,11 @@ sub update_conf {
       theobroma_cacao_matina
       trifolium_pratense
       triticum_aestivum
+      triticum_aestivum_cadenza
+      triticum_aestivum_claire
+      triticum_aestivum_paragon
+      triticum_aestivum_robigus
+      triticum_aestivum_weebil
       triticum_dicoccoides
       triticum_turgidum 
       triticum_urartu

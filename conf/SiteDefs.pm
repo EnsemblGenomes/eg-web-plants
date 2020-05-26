@@ -81,7 +81,7 @@ sub update_conf {
       ipomoea_triloba
       leersia_perrieri
       lupinus_angustifolius
-      malus_domestica
+      malus_domestica_golden
       manihot_esculenta
       marchantia_polymorpha
       medicago_truncatula

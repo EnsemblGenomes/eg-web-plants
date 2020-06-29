@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>RNA-Seq studies in plants</title>
+<meta name="order" content="3" />
+</head>
+
+<body>
+
+<h1>Track hubs for all public RNA-Seq studies in plants</h1>
+
+<p>As part of a BBSRC-funded crop infrastructure project, we have established a pipeline 
+for generating track hubs for all public RNA-Seq studies in the INSDC archives. The pipeline 
+discovers and aligns reads from RNA-Seq studies across all plant species in Ensembl Plants. 
+Alignments and their associated metadata are registered in the Track Hub Registry for search 
+and discovery within the genome browser.</p>
+
+<p>In detail, the pipeline uses the ENA's search APIs to discover all plant-spcific RNA-Seq 
+studies. The read data for each study is aligned to the appropriate reference genome in 
+Ensembl Plants using the <a href="http://nunofonseca.github.io/irap/">iRAP pipeline</a> developed 
+by the EMBL-EBI <a href="http://www.ebi.ac.uk/about/people/robert-petryszak">Gene Expression team</a>.
+Quality-filtered reads are aligned using <a href="https://ccb.jhu.edu/software/tophat/index.shtml">TopHat 2</a>. The resulting BAM files are converted to 
+<a href="http://www.ebi.ac.uk/ena/software/cram-toolkit">CRAM format</a>. Each set of CRAM files 
+for a specific study, along with their associated sample and study metadata, are used to create a 
+track hub that is registered in the Track Hub Registry.</p>
+
+</body>
+</html>
+

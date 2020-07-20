@@ -72,6 +72,7 @@ sub update_conf {
       dioscorea_rotundata
       eragrostis_curvula
       eragrostis_tef
+      eutrema_salsugineum
       galdieria_sulphuraria
       glycine_max
       gossypium_raimondii
@@ -79,6 +80,7 @@ sub update_conf {
       hordeum_vulgare
       hordeum_vulgare_goldenpromise
       ipomoea_triloba
+      kalanchoe_fedtschenkoi
       leersia_perrieri
       lupinus_angustifolius
       malus_domestica_golden
@@ -110,6 +112,7 @@ sub update_conf {
       prunus_avium
       prunus_dulcis
       prunus_persica
+      quercus_lobata
       rosa_chinensis
       saccharum_spontaneum
       selaginella_moellendorffii

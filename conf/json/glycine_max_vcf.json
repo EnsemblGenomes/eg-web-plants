@@ -1,0 +1,20 @@
+{
+    "collections": [
+        {
+        "id": "gmax_EVA_PRJEB35532_112_wild_samples",
+        "source_name" : "PRJEB35532",
+        "species": "glycine_max",
+        "assembly": "Glycine_max_v2.1",
+        "type": "remote",
+        "filename_template": "ftp://ftp.ebi.ac.uk/pub/databases/eva/PRJEB35532/Soybean.112_wild_samples.MAF1.vcf.gz",
+        "use_as_source" : 1,
+        "use_seq_region_synonyms": 1,
+        "chromosomes": [
+            "1","2","3", "4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"
+        ],
+        "strict_name_match": 0,
+        "sample_prefix": ""
+        }
+    ]
+}
+

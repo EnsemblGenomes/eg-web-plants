@@ -47,6 +47,7 @@ sub update_conf {
       arabidopsis_lyrata
       arabidopsis_thaliana
       arabis_alpina
+      asparagus_officinalis
       aegilops_tauschii
       amborella_trichopoda
       beta_vulgaris
@@ -58,6 +59,7 @@ sub update_conf {
       camelina_sativa
       cannabis_sativa_female
       chara_braunii
+      chenopodium_quinoa
       chlamydomonas_reinhardtii
       chondrus_crispus
       citrus_clementina
@@ -72,6 +74,7 @@ sub update_conf {
       dioscorea_rotundata
       eragrostis_curvula
       eragrostis_tef
+      eucalyptus_grandis
       eutrema_salsugineum
       galdieria_sulphuraria
       glycine_max
@@ -104,7 +107,8 @@ sub update_conf {
       oryza_sativa
       ostreococcus_lucimarinus
       panicum_hallii_fil2
-      panicum_hallii_hal2
+      panicum_hallii
+      papaver_somniferum
       phaseolus_vulgaris
       physcomitrella_patens
       pistacia_vera
@@ -122,15 +126,25 @@ sub update_conf {
       solanum_tuberosum
       sorghum_bicolor
       theobroma_cacao_criollo
-      theobroma_cacao_matina
+      theobroma_cacao
       trifolium_pratense
       triticum_aestivum
+      triticum_aestivum_arinalrfor
       triticum_aestivum_cadenza
       triticum_aestivum_claire
+      triticum_aestivum_jagger
+      triticum_aestivum_julius
+      triticum_aestivum_lancer
+      triticum_aestivum_landmark
+      triticum_aestivum_mace
+      triticum_aestivum_mattis
+      triticum_aestivum_norin61
       triticum_aestivum_paragon
       triticum_aestivum_robigus
+      triticum_aestivum_stanley
       triticum_aestivum_weebil
       triticum_dicoccoides
+      triticum_spelta
       triticum_turgidum 
       triticum_urartu
       vigna_angularis

@@ -20,8 +20,15 @@ from the final assemblies. The K-mer Analysis Toolkit was used to validate scaff
 generating a kmer histogram from the matrix of kmers shared between the paired-end reads and 
 the scaffolds.</p> 
 
+<ul>
+  <li>Walkowiak, S., Gao, L., Monat, C. et al. Multiple wheat genomes reveal global variation 
+in modern breeding. Nature (2020). <a href="https://doi.org/10.1038/s41586-020-2961-x">https://doi.org/10.1038/s41586-020-2961-x</a></li>
+</ul>
+
 <p>Genes were projected for all assemblies from the IWGSC RefSeq v1.1 annotation. <i>De novo</i> 
-gene annotation is currently being worked on and will be added at a later stage.</p>
+gene annotation is currently being worked on and will be added at a later stage.
+For the cultivar Stanley in chromosome 2A some genes need to be reloaded; you can find 
+more details on our <a href="http://www.ensembl.info/known-bugs/ensembl-103/">known bugs page</a>.</p>
 
     </div>
   </div>

@@ -15,7 +15,7 @@ This also includes additional info about country source and sowing season. Pleas
 <a href="www.seedstor.ac.uk/search-browseaccessions.php?idCollection=35">SeedStor</a> for
 more information.</p>
 
-<h2>10+ Wheat Genome Lines</h2>
+<h4>10+ Wheat Genome Lines</h4>
 
 <p>The 10+ Wheat Genome Project has completed its goal of generating chromosome pseudomolecule 
 assemblies for 10 wheat cultivars and 5 scaffold assemblies. These cultivars were selected by 
@@ -23,7 +23,12 @@ each of the global partners to represent genetic diversity typical of breeding p
 their agroecological zones. Genome sequences have been assembled to reference quality using 
 the NRgene DeNovo Magic 3.0 software for pseudomolecule assemblies.</p>
 
-<h2>UK Wheat Lines</h2>
+    </div>
+  </div>
+  <div class="column-two">
+    <div class="column-right">
+
+<h4>UK Wheat Lines</h4>
 
 <p>Five wheat lines chosen for their importance in breeding and research in the United Kingdom 
 have been sequenced and displayed in Ensembl as part of our contribution to the Designing Future 
@@ -45,6 +50,14 @@ the scaffolds.</p>
   <li>Walkowiak, S., Gao, L., Monat, C. et al. Multiple wheat genomes reveal global variation 
 in modern breeding. Nature (2020). <a href="https://doi.org/10.1038/s41586-020-2961-x">https://doi.org/10.1038/s41586-020-2961-x</a></li>
 </ul>
+
+    </div>
+  </div>
+</div>
+<div>
+<div class="column-wrapper">
+  <div class="column-two">
+    <div class="column-left">
 
 <h2>Genes</h2>
 

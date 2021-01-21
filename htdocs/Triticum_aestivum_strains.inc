@@ -2,6 +2,27 @@
   <div class="column-two">
     <div class="column-left">
 
+<h2>Overview</h2>
+
+<p>The <a href="http://www.10wheatgenomes.com/10-wheat-genomes-project-and-the-wheat-initiative">10+ Wheat Genomes Project</a> 
+is a global partnership that leverages collaborative expertise and funding with the aim to 
+characterise the wheat pan-genome. Created in 2011 following endorsement from the G20 
+Agriculture Ministries, the Wheat Initiative provides a framework to establish strategic 
+research and organization priorities for wheat research at the international level in both 
+developed and developing countries. Seeds of all cultivars included in the project can be 
+ordered for research use through the Germplasm Resources Unit at the John Innes Centre, UK. 
+This also includes additional info about country source and sowing season. Please visit the 
+<a href="www.seedstor.ac.uk/search-browseaccessions.php?idCollection=35">SeedStor</a> for
+more information.</p>
+
+<h2>10+ Wheat Genome Lines</h2>
+
+<p>The 10+ Wheat Genome Project has completed its goal of generating chromosome pseudomolecule 
+assemblies for 10 wheat cultivars and 5 scaffold assemblies. These cultivars were selected by 
+each of the global partners to represent genetic diversity typical of breeding programs in 
+their agroecological zones. Genome sequences have been assembled to reference quality using 
+the NRgene DeNovo Magic 3.0 software for pseudomolecule assemblies.</p>
+
 <h2>UK Wheat Lines</h2>
 
 <p>Five wheat lines chosen for their importance in breeding and research in the United Kingdom 
@@ -25,7 +46,7 @@ the scaffolds.</p>
 in modern breeding. Nature (2020). <a href="https://doi.org/10.1038/s41586-020-2961-x">https://doi.org/10.1038/s41586-020-2961-x</a></li>
 </ul>
 
-<h3>Genes</h3>
+<h2>Genes</h2>
 
 <p>Genes have been projected for all assemblies from the IWGSC RefSeq v1.1 annotation. 
 <i>De novo</i> gene annotation is currently being worked on and will be added at a later stage.</p>

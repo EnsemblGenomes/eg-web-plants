@@ -82,7 +82,9 @@ sub update_conf {
       helianthus_annuus
       hordeum_vulgare
       hordeum_vulgare_goldenpromise
+      hordeum_vulgare_tritex
       ipomoea_triloba
+      juglans_regia
       kalanchoe_fedtschenkoi
       leersia_perrieri
       lupinus_angustifolius
@@ -120,10 +122,12 @@ sub update_conf {
       rosa_chinensis
       saccharum_spontaneum
       selaginella_moellendorffii
+      sesamum_indicum
       setaria_italica
       setaria_viridis
       solanum_lycopersicum
       solanum_tuberosum
+      solanum_tuberosum_rh8903916
       sorghum_bicolor
       theobroma_cacao_criollo
       theobroma_cacao

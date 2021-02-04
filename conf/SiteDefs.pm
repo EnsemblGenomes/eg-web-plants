@@ -112,7 +112,7 @@ sub update_conf {
       panicum_hallii
       papaver_somniferum
       phaseolus_vulgaris
-      physcomitrella_patens
+      physcomitrium_patens
       pistacia_vera
       populus_trichocarpa
       prunus_avium

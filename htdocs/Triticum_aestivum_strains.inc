@@ -30,8 +30,8 @@ in modern breeding. Nature (2020). <a href="https://doi.org/10.1038/s41586-020-2
 <p>Genes have been projected for all assemblies from the IWGSC RefSeq v1.1 annotation. 
 <i>De novo</i> gene annotation is currently being worked on and will be added at a later stage.</p>
 <ul>
-  <li><a href="https://wheat.ipk-gatersleben.de/downloads/gene_projection/readme_10WheatProjections.txt">More information about the projection</a></li>
-  <li><a href="https://wheat.ipk-gatersleben.de/downloads/gene_projection/geneid_2_chinese.sourceid.txt">Download gene mapping</a> from the reference to the rest of the cultivars</li>
+  <li><a href="https://webblast.ipk-gatersleben.de/downloads/wheat/gene_projection/readme_10WheatProjections.txt">More information about the projection</a></li>
+  <li><a href="https://webblast.ipk-gatersleben.de/downloads/gene_projection/geneid_2_chinese.sourceid.txt">Download gene mapping</a> from the reference to the rest of the cultivars</li>
 </ul>
 
     </div>

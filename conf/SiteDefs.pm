@@ -55,6 +55,7 @@ sub update_conf {
       brassica_napus
       brassica_oleracea
       brassica_rapa
+      brassica_rapa_ro18
       capsicum_annuum
       camelina_sativa
       cannabis_sativa_female
@@ -66,6 +67,7 @@ sub update_conf {
       citrullus_lanatus
       coffea_canephora
       corchorus_capsularis
+      corylus_avellana
       cucumis_melo
       cucumis_sativus
       cyanidioschyzon_merolae
@@ -76,6 +78,7 @@ sub update_conf {
       eragrostis_tef
       eucalyptus_grandis
       eutrema_salsugineum
+      ficus_carica
       galdieria_sulphuraria
       glycine_max
       gossypium_raimondii
@@ -86,6 +89,7 @@ sub update_conf {
       ipomoea_triloba
       juglans_regia
       kalanchoe_fedtschenkoi
+      lactuca_sativa
       leersia_perrieri
       lupinus_angustifolius
       malus_domestica_golden
@@ -95,6 +99,7 @@ sub update_conf {
       musa_acuminata
       nicotiana_attenuata
       nymphaea_colorata
+      olea_europaea
       olea_europaea_sylvestris
       oryza_barthii
       oryza_brachyantha

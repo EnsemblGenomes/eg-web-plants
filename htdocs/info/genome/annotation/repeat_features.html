@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta name="order" content="7" />
+<title>Repeat feature annotation</title>
+</head>
+
+<body>
+
+<h1>Repeat feature annotation</h1>
+
+<p>Several software programs are run to annotate three types of repeats:</p>
+
+<ul>
+  <li>Low-complexity regions (Dust [1])</li>
+  <li>Tandem repeats (<a href="http://tandem.bu.edu/trf/trf.html">TRF</a> [2])</li>
+  <li>Complex repeats: <ul>
+    <li> <a href="http://repeatmasker.org/">RepeatMasker</a> [3] </li>
+    <li> <a href="https://github.com/BioinformaticsToolsmith/Red">Repeat Detector (Red)</a> [4] and <a href="https://github.com/Ensembl/plant-scripts">Ensembl/plant-scripts</a> [5]</li>
+    </ul></li>
+</ul>
+
+<p>Annotating repeats with RepeatMasker requires a repeat library. 
+Repeat libraries from the following sources are used and combined where possible:</p>
+
+<ul>
+  <li>The <a href="https://pgsb.helmholtz-muenchen.de/plant/recat">MIPS Repeat Database (REdat)</a>.</li> 
+  
+  <li><a href="https://github.com/Ensembl/plant-scripts/releases/tag/v0.3">nrTEplants</a>, 
+  a curated library with repeated sequences annotated at REdat,   
+  <a href="http://urgi.versailles.inra.fr/repetdb/begin.do">RepetDB</a>, 
+  <a href="http://botserv2.uzh.ch/kelldata/trep-db">TREP</a> and other collections [5].</li>
+</ul>
+
+<h2>Viewing and accessing repeat features</h2>
+
+<p>By default, repeat features are not displayed in the genome browser; display them by using 
+the <a href="/info/website/control_panel.html">Configure this page</a> option. You can view all 
+repeats, or a subset of repeats based on type.</p>
+
+<p>The repeat annotations can be programatically accessed using the 
+<a href="/info/data/api.html">Ensembl API</a>. See the <a href="http://www.ensembl.org/info/docs/Doxygen/core-api/classBio_1_1EnsEMBL_1_1RepeatFeature.html">RepeatFeature</a> and <a href="http://www.ensembl.org/info/docs/Doxygen/core-api/classBio_1_1EnsEMBL_1_1DBSQL_1_1RepeatFeatureAdaptor.html">RepeatFeatureAdaptor</a> documentation for further details.</p>
+
+<h2>References</h2>
+
+<ol>
+  <li>Morgulis A <em>et al.</em> (2006) <a href="http://europepmc.org/abstract/MED/16796549">A fast and symmetric DUST implementation to mask low-complexity DNA sequences.</a> J Comput Biol. <b>13</b>:1028-40</li>
+  <li>Benson G (1999) <a href="http://europepmc.org/abstract/MED/9862982">Tandem repeats finder: a program to analyze DNA sequences.</a> Nucleic Acids Res. <b>27</b>: 573-580</li>
+  <li>Smit AFA, Hubler R, Green P (2015) <em>RepeatMasker Open-4.0</em> <a href="http://www.repeatmasker.org">http://www.repeatmasker.org</a></li>
+  <li>Girgis HZ (2015) <a href="https://europepmc.org/article/MED/26206263">Red: an intelligent, rapid, accurate tool for detecting repeats de-novo on the genomic scale.</a> BMC Bioinformatics, <b>16</b>:227</li>
+  <li>Contreras-Moreira B, Filippi CV, Naamati G, Garcí&iacute;a Gir&oacute;n C, Allen JE, Flicek P (2021) <a href="https://europepmc.org/article/PPR/PPR302441">Efficient masking of plant genomes by combining kmer counting and curated repeats</a> Preprint from bioRxiv, DOI: 10.1101/2021.03.22.436504
+</ol>
+
+</body>
+</html>

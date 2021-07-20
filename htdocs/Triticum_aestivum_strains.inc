@@ -12,7 +12,7 @@ research and organization priorities for wheat research at the international lev
 developed and developing countries. Seeds of all cultivars included in the project can be 
 ordered for research use through the Germplasm Resources Unit at the John Innes Centre, UK. 
 This also includes additional info about country source and sowing season. Please visit the 
-<a href="www.seedstor.ac.uk/search-browseaccessions.php?idCollection=35">SeedStor</a> for
+<a href="https://www.seedstor.ac.uk/search-browseaccessions.php?idCollection=35">SeedStor</a> for
 more information.</p>
 
 <h4>10+ Wheat Genome Lines</h4>

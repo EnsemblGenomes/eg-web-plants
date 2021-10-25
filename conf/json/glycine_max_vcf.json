@@ -5,8 +5,8 @@
         "source_name" : "PRJEB35532",
         "species": "glycine_max",
         "assembly": "Glycine_max_v2.1",
-        "type": "remote",
-        "filename_template": "ftp://ftp.ebi.ac.uk/pub/databases/eva/PRJEB35532/Soybean.112_wild_samples.MAF1.vcf.gz",
+        "type": "local",
+        "filename_template": "/eva/glycine_max/Glycine_max_v2.1/Soybean.112_wild_samples.MAF1.vcf.gz",
         "use_as_source" : 1,
         "use_seq_region_synonyms": 1,
         "chromosomes": [

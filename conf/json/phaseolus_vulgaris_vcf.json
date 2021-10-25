@@ -5,8 +5,8 @@
         "source_name" : "PRJEB18671",
         "species": "phaseolus_vulgaris",
         "assembly": "PhaVulg1_0",
-        "type": "remote",
-        "filename_template": "ftp://ftp.ebi.ac.uk/pub/databases/eva/PRJEB18671/BeanWGS_CIAT_UCDAVIS_Q40.garys.debugged.vcf.gz",
+        "type": "local",
+        "filename_template": "/eva/phaseolus_vulgaris/PhaVulg1_0/BeanWGS_CIAT_UCDAVIS_Q40.garys.debugged.vcf.gz",
         "use_as_source" : 1,
         "use_seq_region_synonyms": 1,
         "chromosomes": [

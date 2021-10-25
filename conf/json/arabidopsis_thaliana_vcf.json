@@ -6,8 +6,8 @@
             "id": "The 1001 Genomes Project",
             "species": "arabidopsis_thaliana",
             "assembly": "TAIR10",
-            "type": "remote",
-            "filename_template": "http://ftp.sra.ebi.ac.uk/vol1/ERZ345/ERZ345220/1001genomes_snp-short-indel_only_ACGTN_v3.1.snpeff.garys.final.vcf.gz",
+            "type": "local",
+            "filename_template": "/eva/arabidopsis_thaliana/tair10/1001genomes_snp-short-indel_only_ACGTN_v3.1.snpeff.garys.final.vcf.gz",
             "chromosomes": [
                 "1", "2", "3", "4", "5"
             ],

@@ -68,6 +68,7 @@ sub update_conf {
       coffea_canephora
       corchorus_capsularis
       corylus_avellana
+      corymbia_citriodora
       cucumis_melo
       cucumis_sativus
       cyanidioschyzon_merolae
@@ -119,6 +120,7 @@ sub update_conf {
       phaseolus_vulgaris
       physcomitrium_patens
       pistacia_vera
+      pisum_sativum
       populus_trichocarpa
       prunus_avium
       prunus_dulcis
@@ -126,6 +128,7 @@ sub update_conf {
       quercus_lobata
       rosa_chinensis
       saccharum_spontaneum
+      secale_cereale
       selaginella_moellendorffii
       sesamum_indicum
       setaria_italica

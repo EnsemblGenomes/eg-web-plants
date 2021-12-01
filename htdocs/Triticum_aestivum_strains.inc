@@ -61,11 +61,11 @@ in modern breeding. Nature (2020). <a href="https://doi.org/10.1038/s41586-020-2
 
 <h2>Genes</h2>
 
-<p>Genes have been projected for all assemblies from the IWGSC RefSeq v1.1 annotation. 
-<i>De novo</i> gene annotation is currently being worked on and will be added at a later stage.</p>
+<p>High confidence de novo predictions called by <a href="https://pgsb.helmholtz-muenchen.de/plant/">PSGB</a> and <a href="https://www.earlham.ac.uk/">EI</a> are available for chromosome level assemblies. </p>
+<p>Projected genes are also available for all assemblies from the IWGSC RefSeq v1.1 annotation.</p>
 <ul>
-  <li><a href="https://webblast.ipk-gatersleben.de/downloads/wheat/gene_projection/readme_10WheatProjections.txt">More information about the projection</a></li>
-  <li><a href="https://webblast.ipk-gatersleben.de/downloads/wheat/gene_projection/geneid_2_chinese.sourceid.txt">Download gene mapping</a> from the reference to the rest of the cultivars</li>
+  <li>You can read more info about the projection <a href="https://wheat.ipk-gatersleben.de/downloads/gene_projection/readme_10WheatProjections.txt">here</a>.</li>
+  <li>You can download the gene mapping from the reference to the rest of the cultivars <a href="https://wheat.ipk-gatersleben.de/downloads/gene_projection/geneid_2_chinese.sourceid.txt">here</a>.</li>
 </ul>
 
     </div>

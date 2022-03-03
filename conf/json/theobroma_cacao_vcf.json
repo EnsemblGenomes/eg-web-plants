@@ -1,0 +1,19 @@
+{
+    "collections": [
+        {
+        "id": "cacao_EVA_ERZ696780_merged",
+        "source_name" : "PRJEB28591",
+        "species": "theobroma_cacao",
+        "assembly": "Theobroma_cacao_20110822",
+        "type": "remote",
+        "filename_template": "http://ftp.ebi.ac.uk/pub/databases/eva/PRJEB28591/ERZ696780_merged.accessioned.vcf.gz",
+        "use_as_source" : 1,
+        "use_seq_region_synonyms": 1,
+        "chromosomes": [
+            "1","2","3", "4","5","6","7","8","9","10"
+        ],
+        "strict_name_match": 0,
+        "sample_prefix": ""
+        }
+    ]
+}

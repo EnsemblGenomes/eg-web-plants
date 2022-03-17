@@ -75,6 +75,8 @@ sub update_conf {
       cynara_cardunculus
       daucus_carota
       dioscorea_rotundata
+      digitaria_exilis
+      echinochloa_crusgalli
       eragrostis_curvula
       eragrostis_tef
       eucalyptus_grandis
@@ -161,6 +163,7 @@ sub update_conf {
       triticum_urartu
       vigna_angularis
       vigna_radiata
+      vigna_unguiculata
       vitis_vinifera
       zea_mays
     )];

@@ -61,7 +61,7 @@ in modern breeding. Nature (2020). <a href="https://doi.org/10.1038/s41586-020-2
 
 <h2>Genes</h2>
 
-<p>High confidence de novo predictions called by <a href="https://pgsb.helmholtz-muenchen.de/plant/">PSGB</a> and <a href="https://www.earlham.ac.uk/">EI</a> are available for chromosome level assemblies. </p>
+<p>High confidence de novo predictions called by <a href="https://pgsb.helmholtz-muenchen.de/plant/">PGSB</a> and <a href="https://www.earlham.ac.uk/">EI</a> are available for chromosome level assemblies. </p>
 <p>Projected genes are also available for all assemblies from the IWGSC RefSeq v1.1 annotation.</p>
 <ul>
   <li>You can read more info about the projection <a href="https://wheat.ipk-gatersleben.de/downloads/gene_projection/readme_10WheatProjections.txt">here</a>.</li>

@@ -6,7 +6,7 @@
         "species": "cucumis_sativus",
         "assembly": "ASM407v2",
         "type": "remote",
-        "filename_template": "/eva/PRJEB34274/CVYV_samtools_filtSNPs.recode.vcf.gz",
+        "filename_template": "/eva/cucumis_sativus/ASM407v2/CVYV_samtools_filtSNPs.recode.vcf.gz",
         "use_as_source" : 1,
         "use_seq_region_synonyms": 1,
         "chromosomes": [

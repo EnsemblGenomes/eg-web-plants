@@ -5,8 +5,8 @@
         "source_name" : "PRJEB40369",
         "species": "lactuca_sativa",
         "assembly": "Lsat_Salinas_v7",
-        "type": "remote",
-        "filename_template": "/eva/PRJEB40369/USDA_BM_GBS_090320.vcf.gz",
+        "type": "local",
+        "filename_template": "/eva/lactuca_sativa/Lsat_Salinas_v7/USDA_BM_GBS_090320.vcf.gz",
         "use_as_source" : 1,
         "use_seq_region_synonyms": 1,
         "chromosomes": [

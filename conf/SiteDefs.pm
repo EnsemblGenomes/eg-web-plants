@@ -52,6 +52,7 @@ sub update_conf {
       amborella_trichopoda
       beta_vulgaris
       brachypodium_distachyon
+      brassica_juncea
       brassica_napus
       brassica_oleracea
       brassica_rapa
@@ -94,6 +95,7 @@ sub update_conf {
       kalanchoe_fedtschenkoi
       lactuca_sativa
       leersia_perrieri
+      lolium_perenne
       lupinus_angustifolius
       malus_domestica_golden
       manihot_esculenta
@@ -128,6 +130,7 @@ sub update_conf {
       prunus_dulcis
       prunus_persica
       quercus_lobata
+      quercus_suber
       rosa_chinensis
       saccharum_spontaneum
       secale_cereale

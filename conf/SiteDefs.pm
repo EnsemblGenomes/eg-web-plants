@@ -50,6 +50,8 @@ sub update_conf {
       asparagus_officinalis
       aegilops_tauschii
       amborella_trichopoda
+      avena_sativa_ot3098
+      avena_sativa_sang
       beta_vulgaris
       brachypodium_distachyon
       brassica_juncea
@@ -57,6 +59,7 @@ sub update_conf {
       brassica_oleracea
       brassica_rapa
       brassica_rapa_ro18
+      cajanus_cajan
       capsicum_annuum
       camelina_sativa
       cannabis_sativa_female
@@ -83,6 +86,7 @@ sub update_conf {
       eucalyptus_grandis
       eutrema_salsugineum
       ficus_carica
+      fraxinus_excelsior
       galdieria_sulphuraria
       glycine_max
       gossypium_raimondii
@@ -151,6 +155,7 @@ sub update_conf {
       triticum_aestivum_claire
       triticum_aestivum_jagger
       triticum_aestivum_julius
+      triticum_aestivum_kariega
       triticum_aestivum_lancer
       triticum_aestivum_landmark
       triticum_aestivum_mace

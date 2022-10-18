@@ -32,7 +32,7 @@ sub update_conf {
     $SiteDefs::SUBDOMAIN_DIR    = 'plants';
     $SiteDefs::ENSEMBL_SITETYPE = 'Ensembl Plants';
     $SiteDefs::SITE_NAME        = 'Ensembl Plants';
-    $SiteDefs::SITE_FTP         = 'https://ftp.ensemblgenomes.org/pub/plants';
+    $SiteDefs::SITE_FTP         = 'https://ftp.ensemblgenomes.ebi.ac.uk/pub/plants';
 
     @SiteDefs::ENSEMBL_PERL_DIRS =
       ( $SiteDefs::ENSEMBL_WEBROOT.'/perl',

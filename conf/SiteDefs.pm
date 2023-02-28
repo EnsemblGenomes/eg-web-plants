@@ -121,6 +121,21 @@ sub update_conf {
       oryza_punctata
       oryza_rufipogon
       oryza_sativa
+      oryza_sativa_arc
+      oryza_sativa_azucena
+      oryza_sativa_chaomeo
+      oryza_sativa_gobolsailbalam
+      oryza_sativa_ir64
+      oryza_sativa_ketannangka
+      oryza_sativa_khaoyaiguang
+      oryza_sativa_larhamugad
+      oryza_sativa_lima
+      oryza_sativa_liuxu
+      oryza_sativa_mh63
+      oryza_sativa_n22
+      oryza_sativa_natelboro
+      oryza_sativa_pr106
+      oryza_sativa_zs97
       ostreococcus_lucimarinus
       panicum_hallii_fil2
       panicum_hallii
@@ -162,6 +177,8 @@ sub update_conf {
       triticum_aestivum_mattis
       triticum_aestivum_norin61
       triticum_aestivum_paragon
+      triticum_aestivum_refseqv2
+      triticum_aestivum_renan
       triticum_aestivum_robigus
       triticum_aestivum_stanley
       triticum_aestivum_weebil

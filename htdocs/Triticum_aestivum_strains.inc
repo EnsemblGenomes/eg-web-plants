@@ -23,6 +23,15 @@ each of the global partners to represent genetic diversity typical of breeding p
 their agroecological zones. Genome sequences have been assembled to reference quality using 
 the NRgene DeNovo Magic 3.0 software for pseudomolecule assemblies.</p>
 
+<h2>Genes</h2>
+
+<p>High confidence de novo predictions called by <a href="https://pgsb.helmholtz-muenchen.de/plant/">PGSB</a> and <a href="https://www.earlham.ac.uk/">EI</a> are available for chromosome level assemblies. </p>
+<p>Projected genes are also available for all assemblies from the IWGSC RefSeq v1.1 annotation.</p>
+<ul>
+  <li>You can read more info about the projection <a href="https://wheat.ipk-gatersleben.de/downloads/gene_projection/readme_10WheatProjections.txt">here</a>.</li>
+  <li>You can download the gene mapping from the reference to the rest of the cultivars <a href="https://wheat.ipk-gatersleben.de/downloads/gene_projection/geneid_2_chinese.sourceid.txt">here</a>.</li>
+</ul>
+
     </div>
   </div>
   <div class="column-two">
@@ -46,26 +55,20 @@ from the final assemblies. The K-mer Analysis Toolkit was used to validate scaff
 generating a kmer histogram from the matrix of kmers shared between the paired-end reads and 
 the scaffolds.</p> 
 
+<h4>IWGSC RefSeq v2.1</h4>
+
+<p>The genome assembly of the reference Triticum aestivum cv. Chinese Spring
+(IWGSC RefSeq v1.0) was revised using whole genome optical maps and contigs
+assembled from whole-genome-shotgun (WGS) PacBio SMRT reads. PacBio contigs
+were used for gap closing. Pseudomolecules of the Chinese Spring 21 chromosomes
+were re-constructed to develop a new reference sequence, IWGSC RefSeq v2.1. The
+revisions involved approximately 10% sequence length of the IWGSC RefSeq v1.0.</p>
+
 <ul>
   <li>Walkowiak, S., Gao, L., Monat, C. et al. Multiple wheat genomes reveal global variation 
-in modern breeding. Nature (2020). <a href="https://doi.org/10.1038/s41586-020-2961-x">https://doi.org/10.1038/s41586-020-2961-x</a></li>
-</ul>
-
-    </div>
-  </div>
-</div>
-<div>
-<div class="column-wrapper">
-  <div class="column-two">
-    <div class="column-left">
-
-<h2>Genes</h2>
-
-<p>High confidence de novo predictions called by <a href="https://pgsb.helmholtz-muenchen.de/plant/">PGSB</a> and <a href="https://www.earlham.ac.uk/">EI</a> are available for chromosome level assemblies. </p>
-<p>Projected genes are also available for all assemblies from the IWGSC RefSeq v1.1 annotation.</p>
-<ul>
-  <li>You can read more info about the projection <a href="https://wheat.ipk-gatersleben.de/downloads/gene_projection/readme_10WheatProjections.txt">here</a>.</li>
-  <li>You can download the gene mapping from the reference to the rest of the cultivars <a href="https://wheat.ipk-gatersleben.de/downloads/gene_projection/geneid_2_chinese.sourceid.txt">here</a>.</li>
+    in modern breeding. Nature (2020). <a href="https://doi.org/10.1038/s41586-020-2961-x">https://doi.org/10.1038/s41586-020-2961-x</a></li>
+  <li>Tingting Zhu, Le Wang, Hélène Rimbert et al. Optical maps refine the bread wheat Triticum aestivum cv. Chinese Spring genome assembly. 
+    The Plant Journal (2021). <a href="https://onlinelibrary.wiley.com/doi/epdf/10.1111/tpj.15289">https://onlinelibrary.wiley.com/doi/epdf/10.1111/tpj.15289</a></li>
 </ul>
 
     </div>

@@ -89,6 +89,7 @@ sub update_conf {
       fraxinus_excelsior
       galdieria_sulphuraria
       glycine_max
+      glycine_soja
       gossypium_raimondii
       helianthus_annuus
       hordeum_vulgare

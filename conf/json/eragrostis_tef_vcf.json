@@ -1,0 +1,19 @@
+{
+    "collections": [
+        {
+        "id": "teff_snps_noWild",
+        "source_name" : "PRJEB62522",
+        "species": "eragrostis_tef",
+        "assembly": "Salk_teff_dabbi_3.0",
+        "type": "remote",
+        "filename_template": "/eva/eragrostis_tef/Salk_teff_dabbi_3.0/teff.snps.noWild.FINAL.AF001.vcf.gz",
+        "use_as_source" : 1,
+        "use_seq_region_synonyms": 1,
+        "chromosomes": [
+            "1A","1B","2A","2B","3A","3B","4A","4B","5A","5B","6A","6B","7A","7B","8A","8B","9A","9B","10A","10B"
+        ],
+        "strict_name_match": 0,
+        "sample_prefix": ""
+        }
+    ]
+}

@@ -187,6 +187,7 @@ sub update_conf {
       triticum_spelta
       triticum_turgidum 
       triticum_urartu
+      vicia_faba
       vigna_angularis
       vigna_radiata
       vigna_unguiculata

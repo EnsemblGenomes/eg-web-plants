@@ -49,6 +49,7 @@ sub update_conf {
       arabis_alpina
       asparagus_officinalis
       aegilops_tauschii
+      aegilops_umbellulata
       amborella_trichopoda
       avena_sativa_ot3098
       avena_sativa_sang

@@ -47,6 +47,7 @@ sub update_conf {
       arabidopsis_lyrata
       arabidopsis_thaliana
       arabis_alpina
+      arachis_hypogaea
       asparagus_officinalis
       aegilops_tauschii
       aegilops_umbellulata
@@ -60,6 +61,7 @@ sub update_conf {
       brassica_oleracea
       brassica_rapa
       brassica_rapa_ro18
+      brassica_rapa_z1
       cajanus_cajan
       capsicum_annuum
       camelina_sativa
@@ -100,6 +102,7 @@ sub update_conf {
       juglans_regia
       kalanchoe_fedtschenkoi
       lactuca_sativa
+      lathyrus_sativus
       leersia_perrieri
       lolium_perenne
       lupinus_angustifolius
@@ -154,7 +157,6 @@ sub update_conf {
       quercus_suber
       rosa_chinensis
       saccharum_spontaneum
-      secale_cereale
       selaginella_moellendorffii
       sesamum_indicum
       setaria_italica
@@ -186,6 +188,7 @@ sub update_conf {
       triticum_aestivum_weebil
       triticum_dicoccoides
       triticum_spelta
+      triticum_timopheevii
       triticum_turgidum 
       triticum_urartu
       vicia_faba

@@ -5,7 +5,7 @@
         "source_name" : "PRJEB62522",
         "species": "eragrostis_tef",
         "assembly": "Salk_teff_dabbi_3.0",
-        "type": "remote",
+        "type": "local",
         "filename_template": "/eva/eragrostis_tef/Salk_teff_dabbi_3.0/teff.snps.noWild.FINAL.AF001.vcf.gz",
         "use_as_source" : 1,
         "use_seq_region_synonyms": 1,

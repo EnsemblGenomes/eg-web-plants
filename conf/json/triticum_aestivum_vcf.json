@@ -27,6 +27,20 @@
         "strict_name_match": 0,
         "sample_prefix": ""
 
+        },
+	{
+        "id": "Watkins",
+        "species": "triticum_aestivum",
+        "assembly": "IWGSC",
+        "type": "local",
+        "filename_template": "/triticum_aestivum/Watkins/combined_watkins_nochr.INFO.vcf.gz",
+        "chromosomes": [
+            "1A","1B","1D","2A","2B","2D","3A","3B","3D","4A","4B","4D","5A","5B","5D","6A","6B","6D","7A","7B","7D"
+        ],
+        "strict_name_match": 0,
+        "sample_prefix": "",
+        "population_prefix": "Watkins_collection:"
+
         }
 
     ]

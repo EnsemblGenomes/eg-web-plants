@@ -6,7 +6,7 @@ use previous qw (draw_tree);
 sub draw_tree {
   my $self = shift;
   my ($cdb, $align_blocks, $slice, $align, $class, $groups, $slices) = @_;
-  if ($align == 313160) {
+  if ($align == 314995) {
     return;
   }
   $self->PREV::draw_tree(@_);

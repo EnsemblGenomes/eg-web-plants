@@ -157,6 +157,7 @@ sub update_conf {
       quercus_suber
       rosa_chinensis
       saccharum_spontaneum
+      secale_cereale
       selaginella_moellendorffii
       sesamum_indicum
       setaria_italica

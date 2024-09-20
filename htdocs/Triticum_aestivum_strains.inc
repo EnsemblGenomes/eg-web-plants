@@ -57,7 +57,7 @@ the scaffolds.</p>
 
 <p>Paragon genome is updated from scaffold to chromosome assembly. The genome was sequenced and 
 assembled at <a href="https://www.earlham.ac.uk/">Earlham Institute</a> using PacBio HiFi reads 
-(33x coverage) and Oxford Nanopore ultra-long reads (17x coverage) then scaffolded using Omni-C 
+(33x coverage) and Oxford Nanopore ultra-long reads (17x coverage), then scaffolded using Omni-C 
 reads to generate a chromosome-scale assembly. This resource was produced as part of the UK 
 Biotechnology and Biological Sciences Research Council's 
 <a href="https://designingfuturewheat.org.uk">Delivering Sustainable Wheat</a> project.</p>

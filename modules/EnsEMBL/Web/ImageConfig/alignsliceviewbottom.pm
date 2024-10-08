@@ -20,9 +20,14 @@ package EnsEMBL::Web::ImageConfig::alignsliceviewbottom;
 
 use strict;
 
+use previous qw (init_cacheable);
 
-sub _modify_cactus_db_transcript_tracks {
+
+sub init_cacheable {
+
   my $self = shift;
+
+  $self->PREV::init_cacheable(@_);
 
   my $align_params = $self->hub->referer->{'params'}{'align'}[0];
   my ($align) = split '--', $align_params;

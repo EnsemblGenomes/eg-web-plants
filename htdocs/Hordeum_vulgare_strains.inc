@@ -15,6 +15,28 @@ was produced by integrating Illumina paired-end reads, long mate-pair reads, Dov
 Gene annotation was taken from <a href="https://doi.org/10.5447/ipk/2019/8">https://doi.org/10.5447/ipk/2019/8</a>. For clarity it is shown as a separate strain while the Morex V3 assembly is not 
 published.</p>
 
-    </div>
+<h2>Pangenome</h2>
+
+<p>
+The barley pangenome highlights the genetic diversity of 76 wild and domesticated genomes, supplemented by short-read data from 1,315 genotypes. This resource expands the catalogue of sequence variations, 
+emphasizing structurally complex loci with significant gene copy number variations.
+</p>
+<p>
+Key findings include novel allelic variations for powdery mildew resistance, population-specific copy number gains influencing plant architecture, and enzymatic activity shifts linked to malting quality. 
+Additionally, an enhancer motif deletion likely affects the development of hairy appendages on barley grains.
+These discoveries underscore the role of allelic diversity in enabling crop adaptation to agricultural environments, providing a valuable tool for genetic research and crop improvement.
+</p>
+
+<h3>References</h3>
+
+      <ul>
+        <li>
+            Jayakodi, M., Lu, Q., Pidon, H., Rabanus-Wallace, M.T., Bayer, M., Lux, T., Guo, Y., Jaegle, B., Badea, A., Bekele, W., Brar, G.S., Braune, K., 
+            Bunk, B., Chalmers, K.J., Chapman, B., Jørgensen, M.E., Feng, J.-W., Feser, M., Fiebig, A. and Gundlach, H. (2024).<br />
+            Structural variation in the pangenome of wild and domesticated barley.<br />
+            <em>Nature</em>. [online] DOI: <a href="https://doi.org/10.1038/s41586-024-08187-1" target="_blank">https://doi.org/10.1038/s41586-024-08187-1</a>
+        </li>
+      </ul>
+   </div>
   </div>
 </div>

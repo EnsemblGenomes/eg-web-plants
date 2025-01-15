@@ -32,7 +32,7 @@
       <p>
         TRITEX is actually the reference cultivar Morex with an updated assembly, as described at 
         <a href="https://doi.org/10.1186/s13059-019-1899-5" target="_blank">https://doi.org/10.1186/s13059-019-1899-5</a>. Gene annotation was taken from 
-        <a href="https://doi.org/10.5447/ipk/2019/8" target="_blank">https://doi.org/10.5447/ipk/2019/8</a>. For clarity, it is shown as a separate strain while the Morex V3 assembly is not published.
+        <a href="https://doi.org/10.5447/ipk/2019/8" target="_blank">https://doi.org/10.5447/ipk/2019/8</a>. For clarity, it is shown as a separate strain until the Morex V3 assembly is not published.
       </p>
 
       <h3>References</h3>

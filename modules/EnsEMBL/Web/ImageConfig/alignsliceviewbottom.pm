@@ -31,10 +31,11 @@ sub init_cacheable {
 
   my $align_params = $self->hub->referer->{'params'}{'align'}[0];
   my ($align) = split '--', $align_params;
+  my $align_details = $self->species_defs->multi_hash->{'DATABASE_COMPARA'}->{'ALIGNMENTS'}->{$align};
 
-  if ($align == 314995) {
-    my $align_type = $self->species_defs->multi_hash->{'DATABASE_COMPARA'}{'ALIGNMENTS'}{$align}{'type'};
-    if ($align_type eq 'CACTUS_DB') {
+  if ($align_details->{'type'} eq 'CACTUS_DB') {
+    if ($align_details->{'name'} =~ /^[0-9]+ wheat.* Cactus$/) {
+
       my $node = $self->get_node('transcript');
       my @tracks = grep { $_->get_data('node_type') eq 'track' } @{$node->get_all_nodes};
       foreach my $track (@tracks) {

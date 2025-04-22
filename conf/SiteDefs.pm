@@ -274,6 +274,39 @@ sub update_conf {
       vigna_unguiculata
       vitis_vinifera
       zea_mays
+    avena_atlantica_gca910589765v1cm
+    avena_byzantina_gca910574625v1cm
+    avena_eriantha_gca910589775v1cm
+    avena_insularis_gca910574615v1cm
+    avena_longiglumis_gca910589755v1cm
+    avena_occidentalis_gca947310975v1cm
+    avena_sativa_gca947310255v1cm
+    avena_sativa_gca947310285v1cm
+    avena_sativa_gca947310875v1cm
+    avena_sativa_gca947311085v1cm
+    avena_sativa_gca947311135v1cm
+    avena_sativa_gca947311155v1cm
+    avena_sativa_gca947311165v1cm
+    avena_sativa_gca947311225v1cm
+    avena_sativa_gca947311235v1cm
+    avena_sativa_gca947311295v1cm
+    avena_sativa_gca947311345v1cm
+    avena_sativa_gca947311355v1cm
+    avena_sativa_gca947311365v1cm
+    avena_sativa_gca947311525v1cm
+    avena_sativa_gca947311555v1cm
+    avena_sativa_gca947311775v1cm
+    avena_sativa_gca947311915v1cm
+    avena_sativa_gca947311925v1cm
+    avena_sativa_gca947312425v1cm
+    avena_sativa_gca951802345v1cm
+    avena_sativa_gca951802355v1cm
+    avena_sativa_gca951802365v1cm
+    avena_sterilis_gca947313225v1cm
+    avena_sterilis_gca947313515v1cm
+    lablab_purpureus_gca030347555v1cm
+    pisum_sativum_gca024323335v2gb
+    pisum_sativum_gca964186695v1gb
     )];
 
     push @SiteDefs::ENSEMBL_HTDOCS_DIRS, $SiteDefs::ENSEMBL_SERVERROOT. '/../biomarts/plants/biomart-perl/htdocs';

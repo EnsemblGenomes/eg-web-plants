@@ -42,6 +42,9 @@ sub update_conf {
 
     $SiteDefs::PRODUCTION_NAMES = [sort qw(
       actinidia_chinensis
+      aegilops_tauschii
+      aegilops_umbellulata
+      amborella_trichopoda
       ananas_comosus
       arabidopsis_halleri
       arabidopsis_lyrata
@@ -49,11 +52,38 @@ sub update_conf {
       arabis_alpina
       arachis_hypogaea
       asparagus_officinalis
-      aegilops_tauschii
-      aegilops_umbellulata
-      amborella_trichopoda
+      avena_atlantica_gca910589765v1cm
+      avena_byzantina_gca910574625v1cm
+      avena_eriantha_gca910589775v1cm
+      avena_insularis_gca910574615v1cm
+      avena_longiglumis_gca910589755v1cm
+      avena_occidentalis_gca947310975v1cm
+      avena_sativa_gca947310255v1cm
+      avena_sativa_gca947310285v1cm
+      avena_sativa_gca947310875v1cm
+      avena_sativa_gca947311085v1cm
+      avena_sativa_gca947311135v1cm
+      avena_sativa_gca947311155v1cm
+      avena_sativa_gca947311165v1cm
+      avena_sativa_gca947311225v1cm
+      avena_sativa_gca947311235v1cm
+      avena_sativa_gca947311295v1cm
+      avena_sativa_gca947311345v1cm
+      avena_sativa_gca947311355v1cm
+      avena_sativa_gca947311365v1cm
+      avena_sativa_gca947311525v1cm
+      avena_sativa_gca947311555v1cm
+      avena_sativa_gca947311775v1cm
+      avena_sativa_gca947311915v1cm
+      avena_sativa_gca947311925v1cm
+      avena_sativa_gca947312425v1cm
+      avena_sativa_gca951802345v1cm
+      avena_sativa_gca951802355v1cm
+      avena_sativa_gca951802365v1cm
       avena_sativa_ot3098
       avena_sativa_sang
+      avena_sterilis_gca947313225v1cm
+      avena_sterilis_gca947313515v1cm
       beta_vulgaris
       brachypodium_distachyon
       brassica_juncea
@@ -63,15 +93,15 @@ sub update_conf {
       brassica_rapa_ro18
       brassica_rapa_z1
       cajanus_cajan
-      capsicum_annuum
       camelina_sativa
       cannabis_sativa_female
+      capsicum_annuum
       chara_braunii
       chenopodium_quinoa
       chlamydomonas_reinhardtii
       chondrus_crispus
-      citrus_clementina
       citrullus_lanatus
+      citrus_clementina
       coffea_canephora
       corchorus_capsularis
       corylus_avellana
@@ -81,8 +111,8 @@ sub update_conf {
       cyanidioschyzon_merolae
       cynara_cardunculus
       daucus_carota
-      dioscorea_rotundata
       digitaria_exilis
+      dioscorea_rotundata
       echinochloa_crusgalli
       eragrostis_curvula
       eragrostis_tef
@@ -175,6 +205,7 @@ sub update_conf {
       ipomoea_triloba
       juglans_regia
       kalanchoe_fedtschenkoi
+      lablab_purpureus_gca030347555v1cm
       lactuca_sativa
       lathyrus_sativus
       leersia_perrieri
@@ -216,13 +247,15 @@ sub update_conf {
       oryza_sativa_pr106
       oryza_sativa_zs97
       ostreococcus_lucimarinus
-      panicum_hallii_fil2
       panicum_hallii
+      panicum_hallii_fil2
       papaver_somniferum
       phaseolus_vulgaris
       physcomitrium_patens
       pistacia_vera
       pisum_sativum
+      pisum_sativum_gca024323335v2gb
+      pisum_sativum_gca964186695v1gb
       populus_trichocarpa
       prunus_avium
       prunus_dulcis
@@ -241,8 +274,8 @@ sub update_conf {
       solanum_tuberosum_rh8903916
       sorghum_bicolor
       sphenostylis_stenocarpa
-      theobroma_cacao_criollo
       theobroma_cacao
+      theobroma_cacao_criollo
       trifolium_pratense
       triticum_aestivum
       triticum_aestivum_alchemy
@@ -274,39 +307,6 @@ sub update_conf {
       vigna_unguiculata
       vitis_vinifera
       zea_mays
-    avena_atlantica_gca910589765v1cm
-    avena_byzantina_gca910574625v1cm
-    avena_eriantha_gca910589775v1cm
-    avena_insularis_gca910574615v1cm
-    avena_longiglumis_gca910589755v1cm
-    avena_occidentalis_gca947310975v1cm
-    avena_sativa_gca947310255v1cm
-    avena_sativa_gca947310285v1cm
-    avena_sativa_gca947310875v1cm
-    avena_sativa_gca947311085v1cm
-    avena_sativa_gca947311135v1cm
-    avena_sativa_gca947311155v1cm
-    avena_sativa_gca947311165v1cm
-    avena_sativa_gca947311225v1cm
-    avena_sativa_gca947311235v1cm
-    avena_sativa_gca947311295v1cm
-    avena_sativa_gca947311345v1cm
-    avena_sativa_gca947311355v1cm
-    avena_sativa_gca947311365v1cm
-    avena_sativa_gca947311525v1cm
-    avena_sativa_gca947311555v1cm
-    avena_sativa_gca947311775v1cm
-    avena_sativa_gca947311915v1cm
-    avena_sativa_gca947311925v1cm
-    avena_sativa_gca947312425v1cm
-    avena_sativa_gca951802345v1cm
-    avena_sativa_gca951802355v1cm
-    avena_sativa_gca951802365v1cm
-    avena_sterilis_gca947313225v1cm
-    avena_sterilis_gca947313515v1cm
-    lablab_purpureus_gca030347555v1cm
-    pisum_sativum_gca024323335v2gb
-    pisum_sativum_gca964186695v1gb
     )];
 
     push @SiteDefs::ENSEMBL_HTDOCS_DIRS, $SiteDefs::ENSEMBL_SERVERROOT. '/../biomarts/plants/biomart-perl/htdocs';

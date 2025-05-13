@@ -68,19 +68,6 @@
         },
 
         {
-            "id": "Rice 3k",
-            "species": "oryza_sativa",
-            "assembly": "IRGSP-1.0",
-            "type": "local",
-            "filename_template": "/oryza_sativa/IRGSP-1.0/variation_genotype/rice_3k.vcf.gz",
-            "use_seq_region_synonyms": 1,
-            "chromosomes": [
-                "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
-            ],
-            "strict_name_match": 0
-        },
-
-        {
             "id": "Zhao et al. 2010",
             "species": "oryza_sativa",
             "assembly": "IRGSP-1.0",
@@ -90,6 +77,21 @@
                 "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
             ],
             "strict_name_match": 0
+        },
+
+	{
+            "id": "Rice 3k",
+            "species": "oryza_sativa",
+            "assembly": "IRGSP-1.0",
+            "type": "local",
+            "filename_template": "/oryza_sativa/IRGSP-1.0/variation_genotype/rice_3k/rice_3k.vcf.gz",
+            "use_seq_region_synonyms": 1,
+            "chromosomes": [
+                "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
+            ],
+            "strict_name_match": 0,
+            "sample_prefix": "Rice3k:",
+            "population_prefix": "Rice3K_collection:"
         }
 
     ]

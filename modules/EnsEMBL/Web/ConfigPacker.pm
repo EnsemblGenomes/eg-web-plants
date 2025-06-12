@@ -21,7 +21,19 @@ use strict;
 use warnings;
 no warnings qw(uninitialized);
 
-use previous qw(munge_databases_multi);
+use previous qw(_munge_meta munge_databases_multi);
+
+
+sub _munge_meta {
+  my $self = shift;
+  $self->PREV::_munge_meta(@_);
+  my $full_tree = $self->full_tree;
+  if (exists $full_tree->{'hordeum_vulgare_goldenmelon'}
+        && defined $full_tree->{'hordeum_vulgare_goldenmelon'}
+        && $full_tree->{'hordeum_vulgare_goldenmelon'}{'STRAIN_GROUP'} ne 'hordeum_vulgare') {
+    $self->tree('hordeum_vulgare_goldenmelon')->{'STRAIN_GROUP'} = 'hordeum_vulgare';
+  }
+}
 
 sub munge_databases_multi {
   my $self = shift;

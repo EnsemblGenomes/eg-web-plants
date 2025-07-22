@@ -33,6 +33,10 @@ sub update_conf {
     $SiteDefs::ENSEMBL_SITETYPE = 'Ensembl Plants';
     $SiteDefs::SITE_NAME        = 'Ensembl Plants';
     $SiteDefs::SITE_FTP         = 'https://ftp.ensemblgenomes.ebi.ac.uk/pub/plants';
+    $SiteDefs::ENSEMBL_VEP_PLUGIN_CONFIG_FILES  = [
+	    $SiteDefs::ENSEMBL_SERVERROOT.'/VEP_plugins/plugin_config.txt', # VEP_plugins is cloned from github.com/ensembl-variation/VEP_plugins
+	    $SiteDefs::ENSEMBL_SERVERROOT.'/eg-web-plants/conf/vep_plugins_web_config.txt'
+    ];
 
     @SiteDefs::ENSEMBL_PERL_DIRS =
       ( $SiteDefs::ENSEMBL_WEBROOT.'/perl',

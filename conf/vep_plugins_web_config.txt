@@ -1,0 +1,9 @@
+{
+	Phenotypes => {
+		"available" => 0
+	},
+
+	GO => {
+		"available" => 0
+  	},
+}

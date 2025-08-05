@@ -297,7 +297,7 @@ sub update_conf {
 
     $SiteDefs::GXA = 1;
 
-    $SiteDefs::ENSEMBL_HMMER_ENABLED  = 1;
+    $SiteDefs::ENSEMBL_HMMER_ENABLED  = 0;
 
     $SiteDefs::REACTOME_URL = 'https://plantreactome.gramene.org';
     $SiteDefs::REACTOME_JS_LIBRARY = 'https://plantreactome.gramene.org/DiagramJs/diagram/diagram.nocache.js';

@@ -57,11 +57,38 @@ sub update_conf {
       arachis_hypogaea
       asparagus_officinalis
       avena_atlantica_gca910589765v1cm
+      avena_byzantina_gca910574625v1cm
       avena_eriantha_gca910589775v1cm
       avena_insularis_gca910574615v1cm
       avena_longiglumis_gca910589755v1cm
+      avena_occidentalis_gca947310975v1cm
+      avena_sativa_gca947310255v1cm
+      avena_sativa_gca947310285v1cm
+      avena_sativa_gca947310875v1cm
+      avena_sativa_gca947311085v1cm
+      avena_sativa_gca947311135v1cm
+      avena_sativa_gca947311155v1cm
+      avena_sativa_gca947311165v1cm
+      avena_sativa_gca947311225v1cm
+      avena_sativa_gca947311235v1cm
+      avena_sativa_gca947311295v1cm
+      avena_sativa_gca947311345v1cm
+      avena_sativa_gca947311355v1cm
+      avena_sativa_gca947311365v1cm
+      avena_sativa_gca947311525v1cm
+      avena_sativa_gca947311555v1cm
+      avena_sativa_gca947311595v1cm
+      avena_sativa_gca947311775v1cm
+      avena_sativa_gca947311915v1cm
+      avena_sativa_gca947311925v1cm
+      avena_sativa_gca947312425v1cm
+      avena_sativa_gca951802345v1cm
+      avena_sativa_gca951802355v1cm
+      avena_sativa_gca951802365v1cm
       avena_sativa_ot3098
       avena_sativa_sang
+      avena_sterilis_gca947313225v1cm
+      avena_sterilis_gca947313515v1cm
       beta_vulgaris
       brachypodium_distachyon
       brassica_juncea
@@ -71,6 +98,7 @@ sub update_conf {
       brassica_rapa_ro18
       brassica_rapa_z1
       cajanus_cajan
+      cajanus_cajan_gca000340665v2gb
       camelina_sativa
       cannabis_sativa_female
       capsicum_annuum
@@ -88,6 +116,7 @@ sub update_conf {
       cucumis_sativus
       cyanidioschyzon_merolae
       cynara_cardunculus
+      cynara_cardunculus_gca001531365v2gb
       daucus_carota
       digitaria_exilis
       dioscorea_rotundata
@@ -101,7 +130,7 @@ sub update_conf {
       galdieria_sulphuraria
       glycine_max
       glycine_soja
-      gossypium_raimondii
+      gossypium_raimondii_gca025698545v1rs
       helianthus_annuus
       hordeum_vulgare
       hordeum_vulgare_10tj18
@@ -185,6 +214,7 @@ sub update_conf {
       kalanchoe_fedtschenkoi
       lablab_purpureus_gca030347555v1cm
       lactuca_sativa
+      lactuca_sativa_gca002870075v4gb
       lathyrus_sativus
       leersia_perrieri
       lolium_perenne
@@ -195,7 +225,7 @@ sub update_conf {
       medicago_truncatula
       musa_acuminata
       nicotiana_attenuata
-      nymphaea_colorata
+      nymphaea_colorata_gca008831285v2rs
       olea_europaea
       olea_europaea_sylvestris
       oryza_barthii
@@ -239,7 +269,7 @@ sub update_conf {
       prunus_dulcis
       prunus_persica
       quercus_lobata
-      quercus_suber
+      quercus_suber_gca002906115v3rs
       rosa_chinensis
       saccharum_spontaneum
       secale_cereale
@@ -248,6 +278,7 @@ sub update_conf {
       setaria_italica
       setaria_viridis
       solanum_lycopersicum
+      solanum_lycopersicum_gca000188115v5cm
       solanum_tuberosum
       solanum_tuberosum_rh8903916
       sorghum_bicolor
@@ -282,7 +313,7 @@ sub update_conf {
       vicia_faba
       vigna_angularis
       vigna_radiata
-      vigna_unguiculata
+      vigna_unguiculata_gca004118075v2rs
       vitis_vinifera
       zea_mays
     )];

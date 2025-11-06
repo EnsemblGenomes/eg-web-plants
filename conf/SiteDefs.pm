@@ -225,6 +225,7 @@ sub update_conf {
       medicago_truncatula
       musa_acuminata
       nicotiana_attenuata
+      nymphaea_colorata
       nymphaea_colorata_gca008831285v2rs
       olea_europaea
       olea_europaea_sylvestris
@@ -269,6 +270,7 @@ sub update_conf {
       prunus_dulcis
       prunus_persica
       quercus_lobata
+      quercus_suber
       quercus_suber_gca002906115v3rs
       rosa_chinensis
       saccharum_spontaneum
@@ -313,6 +315,7 @@ sub update_conf {
       vicia_faba
       vigna_angularis
       vigna_radiata
+      vigna_unguiculata
       vigna_unguiculata_gca004118075v2rs
       vitis_vinifera
       zea_mays

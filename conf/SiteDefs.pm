@@ -97,7 +97,6 @@ sub update_conf {
       brassica_rapa
       brassica_rapa_ro18
       brassica_rapa_z1
-      cajanus_cajan
       cajanus_cajan_gca000340665v2gb
       camelina_sativa
       cannabis_sativa_female
@@ -115,7 +114,6 @@ sub update_conf {
       cucumis_melo
       cucumis_sativus
       cyanidioschyzon_merolae
-      cynara_cardunculus
       cynara_cardunculus_gca001531365v2gb
       daucus_carota
       digitaria_exilis
@@ -213,7 +211,6 @@ sub update_conf {
       juglans_regia
       kalanchoe_fedtschenkoi
       lablab_purpureus_gca030347555v1cm
-      lactuca_sativa
       lactuca_sativa_gca002870075v4gb
       lathyrus_sativus
       leersia_perrieri
@@ -279,7 +276,6 @@ sub update_conf {
       sesamum_indicum
       setaria_italica
       setaria_viridis
-      solanum_lycopersicum
       solanum_lycopersicum_gca000188115v5cm
       solanum_tuberosum
       solanum_tuberosum_rh8903916

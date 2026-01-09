@@ -22,7 +22,7 @@ and Augustus were used to predict protein-coding genes, with parameters
 trained for <i>O. europaea var. sylvestris</i>, <i>Arabidopsis thaliana</i>, 
 <i>Sesamum indicum</i>, <i>Solanum tuberosum</i> and <i>Vitis vinifera</i>.
 Repeats were annotated with the 
-<a href="http://plants.ensembl.org/info/genome/annotation/repeat_features.html">Ensembl Genomes repeat feature pipeline</a>.
+<a href="https://plants.ensembl.org/info/genome/annotation/repeat_features.html">Ensembl Genomes repeat feature pipeline</a>.
 There are: 1619023 Low complexity (Dust) features, covering 160 Mb (14.0% of
 the genome); 1281455 RepeatMasker features (with the REdat library),
 covering 261 Mb (22.9% of the genome); 8004 RepeatMasker features (with

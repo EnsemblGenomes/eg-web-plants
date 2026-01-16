@@ -24,24 +24,19 @@ use warnings;
 
 sub _show_unannotated_paralogs_info_panel {
   my ($self, $strain) = @_;
-  my $availability   = $self->object->availability;
-
   my $html;
-  if ((!$strain && $availability->{'has_other_paralogs_unannotated'})
-      || ($strain && $availability->{'has_strain_other_paralogs_unannotated'})) {
 
-    my @info_text_parts = (
-      'Due to the large number of ancient paralogues of this gene in its supertree, not all of its ancient paralogues have been annotated.',
-      ' As a consequence, this list of paralogues may be incomplete.',
-    );
+  my @info_text_parts = (
+    'Due to the large number of ancient paralogues of this gene in its supertree, not all of its ancient paralogues have been annotated.',
+    ' As a consequence, this list of paralogues may be incomplete.',
+  );
 
-    if ($availability->{'family'}) {
-      push(@info_text_parts, 'Homologues of this gene may be accessible through its "Gene families" page.')
-    }
-
-    my $info_panel_html = '<p>' . join(' ', @info_text_parts) . '</p>';
-    $html = $self->_info_panel('warning', 'Unannotated paralogues', $info_panel_html);
+  if ($self->object->availability->{'family'}) {
+    push(@info_text_parts, 'Homologues of this gene may be accessible through its "Gene families" page.')
   }
+
+  my $info_panel_html = '<p>' . join(' ', @info_text_parts) . '</p>';
+  $html = $self->_info_panel('warning', 'Unannotated paralogues', $info_panel_html);
 
   return $html;
 }

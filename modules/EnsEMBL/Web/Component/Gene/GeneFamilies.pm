@@ -27,7 +27,8 @@ sub _show_large_gene_family_info_panel {
 
   my $msg = '<p>The EnsemblCompara protein-trees pipeline has identified this gene as a member of a very large gene family, shown here.'
             . ' Because of the number of genes involved, some or all of the members of this family lack protein-tree and homology pair data.'
-            . ' For more information, see <a href="https://example.com/">this blog post on large gene families</a>.</p>';
+            . ' For more information, see <a href="https://www.ensembl.info/2026/01/14/large-plant-protein-clusters-accessible-via-gene-families-view/">'
+            . 'this blog post on large gene families</a>.</p>';
 
   return $self->_info_panel('info', 'Large gene family', $msg);
 }

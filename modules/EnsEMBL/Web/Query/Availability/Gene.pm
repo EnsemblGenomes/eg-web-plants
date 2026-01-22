@@ -26,8 +26,13 @@ sub _counts {
 
   my ($args,$member) = @_;
   my $counts = $self->PREV::_counts(@_);
-  my $division = $self->sd_config($args, 'DIVISION');
-  $counts->{'families'} = $member->number_of_families($division);
+
+  if ($member) {
+    my $division = $self->sd_config($args, 'DIVISION');
+    if ($division) {
+      $counts->{'families'} = $member->number_of_families($division);
+    }
+  }
 
   return $counts;
 }

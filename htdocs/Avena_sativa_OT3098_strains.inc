@@ -48,9 +48,9 @@
 
       <ul>
         <li><a href="https://www.nature.com/articles/s41586-025-09676-7">Avni et al., "A pangenome and pantranscriptome of hexaploid oat", Nature, 2025</a></li>
-        <li><a href="https://www.nature.com/articles/s41467-025-57895-3">Bekele et al. "Global genomic population structure of wild and cultivated oat reveals
+        <li><a href="https://www.nature.com/articles/s41467-025-57895-3">Bekele et al. "Global genomic population structure of wild and cultivated oat reveals 
           signatures of chromosome rearrangements", Nature Communications, 2025</a></li>
-        <li><a href="https://doi.org/10.1038/s41586-022-04732-y">Kamal, N., Tsardakas Renhuldt, N., Bentzer, J. et al. The mosaic oat genome gives insights into
+        <li><a href="https://doi.org/10.1038/s41586-022-04732-y">Kamal, N., Tsardakas Renhuldt, N., Bentzer, J. et al. The mosaic oat genome gives insights into 
           a uniquely healthy cereal crop. Nature 606, 113–119 (2022)</a></li>
       </ul>
 

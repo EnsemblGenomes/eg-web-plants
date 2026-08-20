@@ -19,14 +19,18 @@ limitations under the License.
 package EnsEMBL::Web::ConfigPacker;
 use strict;
 use warnings;
+
+use Bio::EnsEMBL::Utils::IO qw(slurp);
+
 no warnings qw(uninitialized);
 
-use previous qw(munge_databases_multi);
+use previous qw(_summarise_compara_alignments munge_databases_multi);
 
 sub munge_databases_multi {
   my $self = shift;
   $self->PREV::munge_databases_multi(@_);
   $self->_configure_per_component_alignments;
+  $self->_load_intra_species_alignments_from_json;
 }
 
 sub _configure_per_component_alignments {
@@ -49,6 +53,44 @@ sub _configure_per_component_alignments {
   }
 
   $dbh->disconnect;
+}
+
+sub _find_intra_species_alignments_json_file {
+  my $self = shift;
+
+  my $json_location;
+  foreach my $confdir (@SiteDefs::ENSEMBL_CONF_DIRS) {
+    my $possible_json_location = "$confdir/json/compara_intra_species_alignments.json";
+    if (-f $possible_json_location) {
+      $json_location = $possible_json_location;
+      last;
+    }
+  }
+
+  return $json_location;
+}
+
+sub _load_intra_species_alignments_from_json {
+  my $self = shift;
+
+  my $json_file_path = $self->_find_intra_species_alignments_json_file();
+  # Skip if INTRA_SPECIES_ALIGNMENTS JSON file does NOT exist.
+  return if !$json_file_path;
+
+  my $db_name = 'DATABASE_COMPARA';
+  my $dbh = $self->db_connect($db_name);
+  $self->db_tree->{$db_name}{'INTRA_SPECIES_ALIGNMENTS'} = from_json(slurp($json_file_path));
+  $dbh->disconnect;
+}
+
+sub _summarise_compara_alignments {
+  my $self = shift;
+
+  my $json_file_path = $self->_find_intra_species_alignments_json_file();
+  # Skip if INTRA_SPECIES_ALIGNMENTS JSON file exists.
+  return if $json_file_path;
+
+  $self->PREV::_summarise_compara_alignments(@_);
 }
 
 1;
